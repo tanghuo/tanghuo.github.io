@@ -152,6 +152,91 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Mongodb相关" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/13/Mongodb相关/">Mongodb相关</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/13/Mongodb相关/" class="archive-article-date">
+  	<time datetime="2018-10-13T09:34:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Mongodb"><a href="#Mongodb" class="headerlink" title="Mongodb"></a>Mongodb</h1><ul>
+<li><p>开启启动<br><code>echo &#39;/usr/local/mongodb/bin/mongod --dbpath=/usr/local/mongodb/data&#39; &gt;&gt;/etc/rc.local</code>   </p>
+</li>
+<li><p>启动mongodb<br><code>/usr/local/mongodb/bin/mongodb --dbpath=/usr/local/mogodb/data  --fork  --logpath=/usr/local/mongodb/dblogs</code>    </p>
+<p>– dbpath执行逐句酷存放路径（默认是data/db）<br>– fork是以Daemon（进程）方式运行<br>注意:如果指定–fork参数，必须指定 –logpath日志文件路径<br>注意：如果不加–fork参数，则需要再开启一个Mongodb启动窗口</p>
+<blockquote>
+<p>–dbpath 指定数据库的目录<br>–port 指定数据库的端口,默认是27017<br>–bind_ip 绑定IP<br>–directoryperdb为每个db创建一个独立子目录<br>–logpath指定日志存放目录<br>–logappend指定日志生成方式(追加/覆盖)<br>–pidfilepath 指定进程文件路径,如果不指定,将不产生进程文件<br>–keyFile 集群模式的关键标识<br>–journal 启用日志<br>–nssize 指定.ns 文件的大小，单位MB，默认是16M，最大是 2GB<br>–maxConns 最大的并发连接数<br>–notablescan 不允许进行表扫描<br>–noprealloc 关闭数据文件的预分配功能<br>–fork 以后台Daemon形式运行服务    </p>
+</blockquote>
+</li>
+</ul>
+        
+          <a class="article-more-a" href="/2018/10/13/Mongodb相关/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Mongodb</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/13/Mongodb相关/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-memcache相关" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1387,118 +1472,6 @@ $filter_XSS = new \FilterXSS(); //正确
 
 
   
-    <article id="post-php的底层运行原理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/11/php的底层运行原理/">php的底层运行原理</a>
-    </h1>
-  
-
-        
-        <a href="/2018/10/11/php的底层运行原理/" class="archive-article-date">
-  	<time datetime="2018-10-11T04:01:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="php的底层运行原理"><a href="#php的底层运行原理" class="headerlink" title="php的底层运行原理"></a>php的底层运行原理</h3><ul>
-<li><p>php的运行模式<br>SAPI : Server Application Programming  Interface 服务器端应用编程接口。它就是php和其他应用交互的接口，php脚本要执行有很多种方式，通过web服务器，或者直接在命令行下，也可以直接嵌入在其他程序中。      </p>
-<ul>
-<li><p>APIS 提供了一个和外部通信的接口，常见有五大运行模式：    </p>
-<ul>
-<li><p>CGI(Common Gateway Interface 通用网关接口)     </p>
-</li>
-<li><p>fsat-CGI( CGI的升级版)     </p>
-</li>
-<li><p>CLI ( Common Line Interface)     </p>
-</li>
-<li><p>isapi ( Internet Server  Application Programming Interface,是微软提供的一套面向Internet服务的API接口)    </p>
-</li>
-<li><p>apache2handle ( 将php作为apache的模块，nigix类似)    </p>
-</li>
-<li><p>其他 ( Continuity，embed，listspeed，milter等)</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><p>CLI 的运行模式<br>Common Line Interface 的简称，即php命令行接口，在windows和linux下都支持php-cli模式。它可以直接在命令行下运行，那就意味着不需要任何的http容器。例如php test.php    </p>
-<ul>
-<li><p>应用场景   </p>
-<ol>
-<li>定时任务   </li>
-<li>开发桌面应用就是使用php-cli和GTK包   </li>
-<li>开发shell脚本</li>
-</ol>
-</li>
-<li><p>优点和缺点   </p>
-<ul>
-<li>利用cronttab去跑php，可以给服务器减压，当然在这里有一个条件，那就是实时性不高。比如：sns中的好友动态，这个实时性要求不高，但是数据量比较大，这个时候定时跑的话，会给web服务器和数据库服务器分担不少的压力。</li>
-<li>就是我们要定时去完成某一事情，比如，我要删除一个月前的用户留言，这个时候，写个php脚本用crontab去执行，一天跑一次，而不是手动去执行php脚本</li>
-<li>无法为普通用户提供http服务
-        
-          <a class="article-more-a" href="/2018/10/11/php的底层运行原理/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">php</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/10/11/php的底层运行原理/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
@@ -1596,11 +1569,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">TP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">TP</a>
+                <a href="javascript:void(0)" class="js-tag color5">mian</a>
               </li>
              
               <li class="article-tag-list-item">

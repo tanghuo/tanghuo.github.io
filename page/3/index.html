@@ -152,6 +152,118 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-php的底层运行原理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/11/php的底层运行原理/">php的底层运行原理</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/11/php的底层运行原理/" class="archive-article-date">
+  	<time datetime="2018-10-11T04:01:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="php的底层运行原理"><a href="#php的底层运行原理" class="headerlink" title="php的底层运行原理"></a>php的底层运行原理</h3><ul>
+<li><p>php的运行模式<br>SAPI : Server Application Programming  Interface 服务器端应用编程接口。它就是php和其他应用交互的接口，php脚本要执行有很多种方式，通过web服务器，或者直接在命令行下，也可以直接嵌入在其他程序中。      </p>
+<ul>
+<li><p>APIS 提供了一个和外部通信的接口，常见有五大运行模式：    </p>
+<ul>
+<li><p>CGI(Common Gateway Interface 通用网关接口)     </p>
+</li>
+<li><p>fsat-CGI( CGI的升级版)     </p>
+</li>
+<li><p>CLI ( Common Line Interface)     </p>
+</li>
+<li><p>isapi ( Internet Server  Application Programming Interface,是微软提供的一套面向Internet服务的API接口)    </p>
+</li>
+<li><p>apache2handle ( 将php作为apache的模块，nigix类似)    </p>
+</li>
+<li><p>其他 ( Continuity，embed，listspeed，milter等)</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>CLI 的运行模式<br>Common Line Interface 的简称，即php命令行接口，在windows和linux下都支持php-cli模式。它可以直接在命令行下运行，那就意味着不需要任何的http容器。例如php test.php    </p>
+<ul>
+<li><p>应用场景   </p>
+<ol>
+<li>定时任务   </li>
+<li>开发桌面应用就是使用php-cli和GTK包   </li>
+<li>开发shell脚本</li>
+</ol>
+</li>
+<li><p>优点和缺点   </p>
+<ul>
+<li>利用cronttab去跑php，可以给服务器减压，当然在这里有一个条件，那就是实时性不高。比如：sns中的好友动态，这个实时性要求不高，但是数据量比较大，这个时候定时跑的话，会给web服务器和数据库服务器分担不少的压力。</li>
+<li>就是我们要定时去完成某一事情，比如，我要删除一个月前的用户留言，这个时候，写个php脚本用crontab去执行，一天跑一次，而不是手动去执行php脚本</li>
+<li>无法为普通用户提供http服务
+        
+          <a class="article-more-a" href="/2018/10/11/php的底层运行原理/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">php</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/11/php的底层运行原理/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-php7相关" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -878,11 +990,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">TP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">TP</a>
+                <a href="javascript:void(0)" class="js-tag color5">mian</a>
               </li>
              
               <li class="article-tag-list-item">
