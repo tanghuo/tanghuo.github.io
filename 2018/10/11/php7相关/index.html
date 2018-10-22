@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="php7相关 迭代生成器 yield迭代生成器的核心是一个yield关键字，一个生成器函数看似普通的函数，不同的是普通函数返回值，生成器返回的是可以被遍历的对象。yield和return还有不同，return会返回值并且终止函数的运行，而yield会返回一个指给循环调用此生成器函数的代码，并且只是暂停执行生成器函数。 12345678910111213141516&amp;lt;?php    funct">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-11T04:00:44.542Z">
+<meta property="og:updated_time" content="2018-10-22T13:56:21.194Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="php7相关">
 <meta name="twitter:description" content="php7相关 迭代生成器 yield迭代生成器的核心是一个yield关键字，一个生成器函数看似普通的函数，不同的是普通函数返回值，生成器返回的是可以被遍历的对象。yield和return还有不同，return会返回值并且终止函数的运行，而yield会返回一个指给循环调用此生成器函数的代码，并且只是暂停执行生成器函数。 12345678910111213141516&amp;lt;?php    funct">
@@ -47,7 +47,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">汤</a></h1>
@@ -105,7 +105,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">汤</h1>
@@ -177,9 +177,12 @@
         <h3 id="php7相关"><a href="#php7相关" class="headerlink" title="php7相关"></a>php7相关</h3><ul>
 <li><p>迭代生成器 yield<br>迭代生成器的核心是一个yield关键字，一个生成器函数看似普通的函数，不同的是普通函数返回值，生成器返回的是可以被遍历的对象。<br>yield和return还有不同，return会返回值并且终止函数的运行，而yield会返回一个指给循环调用此生成器函数的代码，并且只是暂停执行生成器函数。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">    function gen_one_to_three()&#123;</span><br><span class="line">      for($i=1;$i&lt;3;$i++)&#123;</span><br><span class="line">      //注意$i的值在不同的yield之间是保持传递的</span><br><span class="line">      return $i;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  $generator= gen_one_to_three();</span><br><span class="line">  var_dump($generator);</span><br><span class="line">  echo &quot;&lt;br/&gt;&quot;;</span><br><span class="line">  var_dump($generator instanceof Iterator);//bool(true);</span><br><span class="line">  echo &quot;&lt;br/&gt;&quot;;</span><br><span class="line">  foreach($generator as $val)&#123;</span><br><span class="line">      echo &quot;&#123;$val&#125;\n&quot;;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>调用上述函数时，里面的代码并未真正的执行，而是返回了一个生成器对象，$generator = Generator object(),$generator instanceof Iterator 说明了Generator 实现了Inerator的接口，可以用foreach进行遍历，每次遍历的时候都会隐式调用current(),next(),key(),vaild()等方法(Generator类中的方法)。      </p>
 </li>
+</ul>
+<a id="more"></a>
+  <!--more-->
+<p>  调用上述函数时，里面的代码并未真正的执行，而是返回了一个生成器对象，$generator = Generator object(),$generator instanceof Iterator 说明了Generator 实现了Inerator的接口，可以用foreach进行遍历，每次遍历的时候都会隐式调用current(),next(),key(),vaild()等方法(Generator类中的方法)。      </p>
+<ul>
 <li><p>Generator类中的方法</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">Ganerator implement Iterator&#123;</span><br><span class="line">  public mixed current (void)//返回当前产生的值    </span><br><span class="line"></span><br><span class="line">  public mixed key (void)//返回当前产生的键    </span><br><span class="line"></span><br><span class="line">  public mixed next (void)//生成器继续执行</span><br><span class="line"></span><br><span class="line">  public mixed rewind (void)//重置迭代器，如果迭代已经开始，这里会抛出一个异常</span><br><span class="line"></span><br><span class="line">  public mixed send (mixed $value)//向生成器中传入一个值，当前yield接受值后，继续执行下一个yield</span><br><span class="line"></span><br><span class="line">  public mixed throw (Exception $exception)//向生成器抛出一个异常</span><br><span class="line"></span><br><span class="line">  public mixed vaild (void)//检查迭代器是否被关闭，已被关闭返回false，反之则true。</span><br><span class="line"></span><br><span class="line">  public mixed __wakeup (void)//序列化回调</span><br><span class="line"></span><br><span class="line">  public mixed getReturn (void)//返回generator函数的返回值，php7+</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
@@ -471,10 +474,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">memcache</a>
               </li>
              
@@ -483,11 +482,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
               </li>
              
               <li class="article-tag-list-item">

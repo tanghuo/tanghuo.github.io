@@ -8,13 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="目标资深">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/page/3/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="目标资深">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="目标资深">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -43,7 +46,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">汤</a></h1>
@@ -101,7 +104,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">汤</h1>
@@ -152,118 +155,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-php的底层运行原理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/11/php的底层运行原理/">php的底层运行原理</a>
-    </h1>
-  
-
-        
-        <a href="/2018/10/11/php的底层运行原理/" class="archive-article-date">
-  	<time datetime="2018-10-11T04:01:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="php的底层运行原理"><a href="#php的底层运行原理" class="headerlink" title="php的底层运行原理"></a>php的底层运行原理</h3><ul>
-<li><p>php的运行模式<br>SAPI : Server Application Programming  Interface 服务器端应用编程接口。它就是php和其他应用交互的接口，php脚本要执行有很多种方式，通过web服务器，或者直接在命令行下，也可以直接嵌入在其他程序中。      </p>
-<ul>
-<li><p>APIS 提供了一个和外部通信的接口，常见有五大运行模式：    </p>
-<ul>
-<li><p>CGI(Common Gateway Interface 通用网关接口)     </p>
-</li>
-<li><p>fsat-CGI( CGI的升级版)     </p>
-</li>
-<li><p>CLI ( Common Line Interface)     </p>
-</li>
-<li><p>isapi ( Internet Server  Application Programming Interface,是微软提供的一套面向Internet服务的API接口)    </p>
-</li>
-<li><p>apache2handle ( 将php作为apache的模块，nigix类似)    </p>
-</li>
-<li><p>其他 ( Continuity，embed，listspeed，milter等)</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li><p>CLI 的运行模式<br>Common Line Interface 的简称，即php命令行接口，在windows和linux下都支持php-cli模式。它可以直接在命令行下运行，那就意味着不需要任何的http容器。例如php test.php    </p>
-<ul>
-<li><p>应用场景   </p>
-<ol>
-<li>定时任务   </li>
-<li>开发桌面应用就是使用php-cli和GTK包   </li>
-<li>开发shell脚本</li>
-</ol>
-</li>
-<li><p>优点和缺点   </p>
-<ul>
-<li>利用cronttab去跑php，可以给服务器减压，当然在这里有一个条件，那就是实时性不高。比如：sns中的好友动态，这个实时性要求不高，但是数据量比较大，这个时候定时跑的话，会给web服务器和数据库服务器分担不少的压力。</li>
-<li>就是我们要定时去完成某一事情，比如，我要删除一个月前的用户留言，这个时候，写个php脚本用crontab去执行，一天跑一次，而不是手动去执行php脚本</li>
-<li>无法为普通用户提供http服务
-        
-          <a class="article-more-a" href="/2018/10/11/php的底层运行原理/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">php</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/10/11/php的底层运行原理/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-php7相关" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -287,6 +178,8 @@
         <h3 id="php7相关"><a href="#php7相关" class="headerlink" title="php7相关"></a>php7相关</h3><ul>
 <li><p>迭代生成器 yield<br>迭代生成器的核心是一个yield关键字，一个生成器函数看似普通的函数，不同的是普通函数返回值，生成器返回的是可以被遍历的对象。<br>yield和return还有不同，return会返回值并且终止函数的运行，而yield会返回一个指给循环调用此生成器函数的代码，并且只是暂停执行生成器函数。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">    function gen_one_to_three()&#123;</span><br><span class="line">      for($i=1;$i&lt;3;$i++)&#123;</span><br><span class="line">      //注意$i的值在不同的yield之间是保持传递的</span><br><span class="line">      return $i;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  $generator= gen_one_to_three();</span><br><span class="line">  var_dump($generator);</span><br><span class="line">  echo &quot;&lt;br/&gt;&quot;;</span><br><span class="line">  var_dump($generator instanceof Iterator);//bool(true);</span><br><span class="line">  echo &quot;&lt;br/&gt;&quot;;</span><br><span class="line">  foreach($generator as $val)&#123;</span><br><span class="line">      echo &quot;&#123;$val&#125;\n&quot;;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
         
           <a class="article-more-a" href="/2018/10/11/php7相关/#more">more >></a>
         
@@ -354,7 +247,7 @@
         <h3 id="php的代码小优化"><a href="#php的代码小优化" class="headerlink" title="php的代码小优化"></a>php的代码小优化</h3><ul>
 <li>if()语句的优化     </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">    //原始写法</span><br><span class="line">    if(1 ==$orderState)&#123;</span><br><span class="line">        $status = &quot;success&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    else&#123;</span><br><span class="line">       $status = &quot;failed&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    return $status;</span><br><span class="line"></span><br><span class="line">    //简化写法</span><br><span class="line">    $status = &quot;failed&quot;;</span><br><span class="line">    if( 1 == $orderState)&#123;</span><br><span class="line">       $status = &apos;success&apos;;</span><br><span class="line">    &#125;</span><br><span class="line">    return $status;</span><br><span class="line">```    </span><br><span class="line">*  使用三元运算符来代替if()</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">    //原始写法</span><br><span class="line">    if(1 ==$orderState)&#123;</span><br><span class="line">        $status = &quot;success&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    else&#123;</span><br><span class="line">       $status = &quot;failed&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    return $status;</span><br><span class="line"></span><br><span class="line">    //简化写法</span><br><span class="line">    $status = &quot;failed&quot;;</span><br><span class="line">    if( 1 == $orderState)&#123;</span><br><span class="line">       $status = &apos;success&apos;;</span><br><span class="line">    &#125;</span><br><span class="line">    return $status;</span><br><span class="line">```    </span><br><span class="line">&lt;!--more --&gt;</span><br><span class="line">*  使用三元运算符来代替if()</span><br></pre></td></tr></table></figure>
 <pre><code>//原始写法
 if(!empty($_POST[&apos;action&apos;])){
     $action = $_POST[&apos;action&apos;];
@@ -568,65 +461,9 @@ $res = implode(&quot; &quot;, $uWord);
 <li><p>变量初始化<br>使用一个未定义的变量，比使用一个定义好的变量慢上八倍以上   </p>
 </li>
 <li><p>使用null === 来代替 is_null<br>is_null 和 null === 的功能完全一样，但是后者节省了一次函数调用   </p>
-</li>
-<li><p>避免在for循环中进行计算   </p>
-</li>
-<li><p>strtr代替str_replace<br>strstr的效率是str_replace的四倍   </p>
-</li>
-<li><p>优先使用单引号<br>$arr[‘id’]的效率是$arr[id]的七倍</p>
-<blockquote>
-<p>如果数组下标为索引类型即键值为数字则无需注意。<br>1，$myarray[‘key’] 单引号模式被直接解析为$myarray的值;<br>2，$myarray[“key”]双引号模式会首先分析”key”字符串内部是否包含 PHP变量，然后再解析为$myarray的值;<br>3，$myarray[key]没有任何引号会先分析局部作用域内有没有key常量定义(即有无define(‘key’,’val’))，<br>如果有则使用局部key常量代表的常量值作为数组键值;<br>否则继续分析全局作用域内有没有key常量定义，<br>如果有则使用全局key常量代表的常量值作为数组键值;<br>否则内部转换key为’key’字符串标量值并抛出E_NOTICE异常。二、$myarray[“$str_key”] 与 $myarray[$str_key]的差别<br>此方式亦为通过字符串类型数组下标访问数组的值，<br>如果数组下标为索引类型即数字则无需注意。<br>其实这里无需额外添加双引号以表示$str_key变量代表的是字符串值，<br>即$myarray[“$str_key”] === $myarray[$str_key]   </p>
-</blockquote>
-</li>
-<li><p>header编码</p>
-<blockquote>
-<p>header(“content_type: text/html;charset=utf-8”);</p>
-</blockquote>
-</li>
-<li>不要写php的结束标志<br>纯php代码，最好删除文件末尾的php结束标志</li>
-<li><p>测试环境开启所有错误</p>
-<blockquote>
-<p>error_reporting(7)开始所有错误</p>
-</blockquote>
-<blockquote>
-<p>error_reporting(0)关闭所有错误      </p>
-</blockquote>
-<p>1: E_ERROR<br>2: E_WARNING<br>3: E_PARSE<br>切记，上线之后要关闭报错，将错误代码写入日志中，方便查错</p>
-</li>
-<li><p>屏蔽错误非常低效<br>尽量不用@</p>
-</li>
-<li><p>用false表示错误，用null标志不存在<br>对于操作类的函数，失败时返回flase，表示操作失败了。对于查询类的函数，则应该返回null，来表示查询不到。   </p>
-</li>
-<li><p>优先使用php内置函数<br>正则耗时，应该尽量避免，采用直接的字符串处理函数，如</p>
-<blockquote>
-<p>filter_var(<a href="mailto:&#39;tanghuo@163.com" target="_blank" rel="noopener">&#39;tanghuo@163.com</a>‘,FILTER_VALIDATE_EMAIL);</p>
-</blockquote>
-<blockquote>
-<p>parse_url 解析URL ，返回其组成部分</p>
-</blockquote>
-<blockquote>
-<p>http_build_query 生成一个URL-encodde之后的请求字符串</p>
-</blockquote>
-<blockquote>
-<p>exif_imagetype  判断一个图像的类型</p>
-</blockquote>
-<blockquote>
-<p>uniqid 生成一个唯一的ID</p>
-</blockquote>
-<blockquote>
-<p>get_browser 获取浏览器具有的功能    </p>
-</blockquote>
-<p>尽量熟悉php手册中的字符串函数和数组函数</p>
-</li>
-</ul>
-<ul>
-<li><p>防御式编程思想<br>不相信外部的一切输入，所有的输入都要检查</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">  $username=htmlspecialchars($_GET[&quot;username&quot;]);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>使用PDO操控mysql</p>
-</li>
-</ul>
-
+        
+          <a class="article-more-a" href="/2018/10/10/php的良好编码/#more">more >></a>
+        
       
 
       
@@ -994,10 +831,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">memcache</a>
               </li>
              
@@ -1006,11 +839,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
               </li>
              
               <li class="article-tag-list-item">

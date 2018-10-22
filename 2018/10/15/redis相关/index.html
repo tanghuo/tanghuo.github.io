@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>redis相关 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="redis相关key key基本操作   keykey pattern用法:?/*/[ae]/[^ae]/[a-c] EXISTSEXISTS key [key …]key是否存在返回值 1 或者 0   SACNSCAN cursor[MATCH pattern] [COUNT count]SCAN命令每次被调用后，都会向用户返回一个新的游标，用户在下次迭代时需要使用这个新游标作为SACN命令的">
+  <meta name="description" content="redis相关key key基本操作    keykey pattern用法:?/*/[ae]/[^ae]/[a-c] EXISTSEXISTS key [key …]key是否存在返回值 1 或者 0   SACNSCAN cursor[MATCH pattern] [COUNT count]SCAN命令每次被调用后，都会向用户返回一个新的游标，用户在下次迭代时需要使用这个新游标作为SACN命令">
 <meta name="keywords" content="redis">
 <meta property="og:type" content="article">
 <meta property="og:title" content="redis相关">
 <meta property="og:url" content="http://yoursite.com/2018/10/15/redis相关/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="redis相关key key基本操作   keykey pattern用法:?/*/[ae]/[^ae]/[a-c] EXISTSEXISTS key [key …]key是否存在返回值 1 或者 0   SACNSCAN cursor[MATCH pattern] [COUNT count]SCAN命令每次被调用后，都会向用户返回一个新的游标，用户在下次迭代时需要使用这个新游标作为SACN命令的">
+<meta property="og:description" content="redis相关key key基本操作    keykey pattern用法:?/*/[ae]/[^ae]/[a-c] EXISTSEXISTS key [key …]key是否存在返回值 1 或者 0   SACNSCAN cursor[MATCH pattern] [COUNT count]SCAN命令每次被调用后，都会向用户返回一个新的游标，用户在下次迭代时需要使用这个新游标作为SACN命令">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-16T03:18:12.494Z">
+<meta property="og:updated_time" content="2018-10-22T13:56:54.239Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="redis相关">
-<meta name="twitter:description" content="redis相关key key基本操作   keykey pattern用法:?/*/[ae]/[^ae]/[a-c] EXISTSEXISTS key [key …]key是否存在返回值 1 或者 0   SACNSCAN cursor[MATCH pattern] [COUNT count]SCAN命令每次被调用后，都会向用户返回一个新的游标，用户在下次迭代时需要使用这个新游标作为SACN命令的">
+<meta name="twitter:description" content="redis相关key key基本操作    keykey pattern用法:?/*/[ae]/[^ae]/[a-c] EXISTSEXISTS key [key …]key是否存在返回值 1 或者 0   SACNSCAN cursor[MATCH pattern] [COUNT count]SCAN命令每次被调用后，都会向用户返回一个新的游标，用户在下次迭代时需要使用这个新游标作为SACN命令">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -48,7 +48,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">汤</a></h1>
@@ -106,7 +106,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">汤</h1>
@@ -176,7 +176,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="redis相关"><a href="#redis相关" class="headerlink" title="redis相关"></a>redis相关</h1><h1 id="key"><a href="#key" class="headerlink" title="key"></a>key</h1><ul>
-<li>key基本操作  <ul>
+<li><p>key基本操作  </p>
+<ul>
 <li>key<br>key pattern<br>用法:?/*/[ae]/[^ae]/[a-c]</li>
 <li>EXISTS<br>EXISTS key [key …]<br>key是否存在<br>返回值 1 或者 0  </li>
 <li>SACN<br>SCAN cursor[MATCH pattern] [COUNT count]<br>SCAN命令每次被调用后，都会向用户返回一个新的游标，用户在下次迭代时需要使用这个新游标作为SACN命令的游标参数，以此延续之前的迭代过程<br>返回值：完整遍历的数据  </li>
@@ -187,12 +188,12 @@
 <li>RENAAMENX<br>RENAMENX KEY NEWKEY  </li>
 <li>TOUCH<br>TOUCH KEY<br>修改key的最后访问时间为当前时间<br>返回值：返回设置成功的key的数量  </li>
 <li>DEL<br>DEL KEY  </li>
-<li>UNLINK<br>UNLINK KEY [KEY..]<br>非阻塞删除指定key    </li>
-</ul>
+<li>UNLINK<br>UNLINK KEY [KEY..]<br>非阻塞删除指定key    <a id="more"></a>
 </li>
 </ul>
+</li>
+<li><p>key的过期设定  </p>
 <ul>
-<li>key的过期设定  <ul>
 <li>EXPIRE<br>EXPIRE key seconds<br>为key设定生存时间，过期自动删除<br>返回值：成功为1，失败为0；  </li>
 <li>EXPIREAT<br>EXPIREAT key timestamp  </li>
 <li>PEXPIRE<br>时间为毫秒   </li>
@@ -603,10 +604,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">memcache</a>
               </li>
              
@@ -615,11 +612,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
               </li>
              
               <li class="article-tag-list-item">

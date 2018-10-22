@@ -8,13 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="目标资深">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="目标资深">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="目标资深">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -43,7 +46,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">汤</a></h1>
@@ -101,7 +104,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">汤</h1>
@@ -152,91 +155,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-Mongodb相关" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/13/Mongodb相关/">Mongodb相关</a>
-    </h1>
-  
-
-        
-        <a href="/2018/10/13/Mongodb相关/" class="archive-article-date">
-  	<time datetime="2018-10-13T09:34:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Mongodb"><a href="#Mongodb" class="headerlink" title="Mongodb"></a>Mongodb</h1><ul>
-<li><p>开启启动<br><code>echo &#39;/usr/local/mongodb/bin/mongod --dbpath=/usr/local/mongodb/data&#39; &gt;&gt;/etc/rc.local</code>   </p>
-</li>
-<li><p>启动mongodb<br><code>/usr/local/mongodb/bin/mongodb --dbpath=/usr/local/mogodb/data  --fork  --logpath=/usr/local/mongodb/dblogs</code>    </p>
-<p>– dbpath执行逐句酷存放路径（默认是data/db）<br>– fork是以Daemon（进程）方式运行<br>注意:如果指定–fork参数，必须指定 –logpath日志文件路径<br>注意：如果不加–fork参数，则需要再开启一个Mongodb启动窗口</p>
-<blockquote>
-<p>–dbpath 指定数据库的目录<br>–port 指定数据库的端口,默认是27017<br>–bind_ip 绑定IP<br>–directoryperdb为每个db创建一个独立子目录<br>–logpath指定日志存放目录<br>–logappend指定日志生成方式(追加/覆盖)<br>–pidfilepath 指定进程文件路径,如果不指定,将不产生进程文件<br>–keyFile 集群模式的关键标识<br>–journal 启用日志<br>–nssize 指定.ns 文件的大小，单位MB，默认是16M，最大是 2GB<br>–maxConns 最大的并发连接数<br>–notablescan 不允许进行表扫描<br>–noprealloc 关闭数据文件的预分配功能<br>–fork 以后台Daemon形式运行服务    </p>
-</blockquote>
-</li>
-</ul>
-        
-          <a class="article-more-a" href="/2018/10/13/Mongodb相关/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Mongodb</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/10/13/Mongodb相关/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-memcache相关" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -272,72 +190,9 @@
 <li><p>memcached.exe -d stop    </p>
 </li>
 </ol>
-<p>调优    </p>
-<ol start="5">
-<li>“C:\memcache\memcache.exe” -m -u root -l 192.168.20.2  -p 10000 -d runservice  </li>
-</ol>
-<h4 id="memcache的安装（linux下）"><a href="#memcache的安装（linux下）" class="headerlink" title="memcache的安装（linux下）"></a>memcache的安装（linux下）</h4><ol>
-<li><p>./configure &amp;&amp; make &amp;&amp; make install    </p>
-</li>
-<li><p>memcache -d -m 2048 -u root -l 192.168.20.1 -p 10000    </p>
-</li>
-<li><p>pkill memcached   </p>
-</li>
-</ol>
-<h4 id="查看memcache的服务状态（window下）"><a href="#查看memcache的服务状态（window下）" class="headerlink" title="查看memcache的服务状态（window下）"></a>查看memcache的服务状态（window下）</h4><ol>
-<li><p>查端口<br>netstat -ano|find ‘10000’    </p>
-<p>备注： -a 显示所有连接和监听端口   </p>
-<pre><code>-n 以数字形式显示地址和端口号，此选项可以同-a组合使用    
--o  显示与每个连接相关的所属进程    
-</code></pre></li>
-<li>查进程<br> tasklist|find”memcache”    </li>
-</ol>
-<h4 id="查看memcache服务状态-linux下"><a href="#查看memcache服务状态-linux下" class="headerlink" title="查看memcache服务状态 (linux下)"></a>查看memcache服务状态 (linux下)</h4><ol>
-<li><p>查端口    </p>
-<p> netstat -tunpl|grep 10000   </p>
-</li>
-<li><p>查进程   </p>
-<p> pstree|grep memcache     </p>
-</li>
-</ol>
-<h4 id="增删改查"><a href="#增删改查" class="headerlink" title="增删改查"></a>增删改查</h4><p>  增：</p>
-<blockquote>
-<p>set name 0 3600 5<br>    user1</p>
-</blockquote>
-<p> 查：   </p>
-<blockquote>
-<p>1.states<br>    2.get name<br>    3.stats items<br>    4.stats cachedump 1 0  </p>
-</blockquote>
-<p>删：   </p>
-<blockquote>
-<p>delete name   </p>
-</blockquote>
-<p>改：</p>
-<blockquote>
-<p>replace name 0 3600 4<br>  user    </p>
-</blockquote>
-<h4 id="php下操控memcache"><a href="#php下操控memcache" class="headerlink" title="php下操控memcache"></a>php下操控memcache</h4><ol>
-<li><p>连接memcache服务器    </p>
-<p>$mem = new Memcache:<br>$mem -&gt;connect(“192.168.20.1”,”10000”);    </p>
-</li>
-<li><p>增<br>$mem -&gt;set(“naame”,”user1”);    </p>
-</li>
-<li><p>删<br>$mem -&gt;&gt;delete(“name”);   </p>
-</li>
-<li><p>改<br>$mem -&gt;set(“age”,200);</p>
-</li>
-<li><p>查<br>echo  $mem-&gt;get(“age”);   </p>
-</li>
-<li><p>查看状态<br>$arr =$mem -&gt;getstat();   </p>
-</li>
-<li><p>清空<br>$mem-&gt;flush();   </p>
-<p>其他的就查询php手册     </p>
-</li>
-</ol>
-<h4 id="memcache-实现跨服务器登录"><a href="#memcache-实现跨服务器登录" class="headerlink" title="memcache 实现跨服务器登录"></a>memcache 实现跨服务器登录</h4><p>   php.ini配置文件修改    </p>
-<pre><code>session.save_handler =memcache;     
-session.save_path = &quot;tcp://192.168.20.1:11211&quot;
-</code></pre>
+        
+          <a class="article-more-a" href="/2018/10/13/memcache相关/#more">more >></a>
+        
       
 
       
@@ -462,93 +317,9 @@ session.save_path = &quot;tcp://192.168.20.1:11211&quot;
 </tr>
 </tbody>
 </table>
-<h3 id="本地可选配置"><a href="#本地可选配置" class="headerlink" title="本地可选配置"></a>本地可选配置</h3><table>
-<thead>
-<tr>
-<th>选项名称</th>
-<th>值类型</th>
-<th>默认值</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td> application.ext</td>
-<td>string</td>
-<td>php</td>
-<td>php脚本的拓展名</td>
-</tr>
-<tr>
-<td> application.bootstrap</td>
-<td>string</td>
-<td>bootstrapapplication.php</td>
-<td>bootstrap路径（绝对路径）</td>
-</tr>
-<tr>
-<td> application.library</td>
-<td>string</td>
-<td>application.directory+”/library”</td>
-<td>本地（自身）类库的绝对路径</td>
-</tr>
-<tr>
-<td> application.baseUrl</td>
-<td>string</td>
-<td>null</td>
-<td>在路径中需要忽视的路径前缀，一般不需要设置，yaf会自动判断</td>
-</tr>
-<tr>
-<td> application.dispatcher.defaultModule</td>
-<td>string</td>
-<td>index</td>
-<td>默认的模块</td>
-</tr>
-<tr>
-<td> application.dispatcher.throwException</td>
-<td>bool</td>
-<td>true</td>
-<td>在出错的时候，是否抛出异常</td>
-</tr>
-<tr>
-<td> application.dispatcher.catchException</td>
-<td>bool</td>
-<td>false</td>
-<td>在出错的时候，是否抛出异常。是否使用默认的异常捕获Controller，如果开启，在有未捕获的异常的时候，控制权会交给ErrorController的errorAction方法，可以通过$request-&gt;getException（）获得此异常对象</td>
-</tr>
-<tr>
-<td> application.dispatcher.DefaultController</td>
-<td>string</td>
-<td>index</td>
-<td>默认的控制器</td>
-</tr>
-<tr>
-<td> application.dispatcher.defaultAciont</td>
-<td>sting</td>
-<td>index</td>
-<td>默认的方法</td>
-</tr>
-<tr>
-<td> application.view.ext</td>
-<td>string</td>
-<td>phtml</td>
-<td>视图模块拓展名</td>
-</tr>
-<tr>
-<td> application.modules</td>
-<td>string</td>
-<td>Index</td>
-<td>声明存在的模块名，请注意，如果你一定要设置这个值，一定要……（看不懂，遇到网上查）</td>
-</tr>
-<tr>
-<td> application.system.*</td>
-<td>string</td>
-<td>*</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h5 id="手动导入类库"><a href="#手动导入类库" class="headerlink" title="手动导入类库"></a>手动导入类库</h5>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">yaf\Loadder::import(&quot;/usr/local/foo.php&quot;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//相对路径，会在APPLICATION_PATH.&quot;/library&quot;下加载    </span><br><span class="line">yaf\Lodder::import(&quot;plugin/User.php&quot;);</span><br></pre></td></tr></table></figure>
-
+        
+          <a class="article-more-a" href="/2018/10/13/yaf相关/#more">more >></a>
+        
       
 
       
@@ -629,17 +400,9 @@ $filter_XSS = new \FilterXSS(); //正确
 </code></pre><hr>
 <p>!一个拓展模块安装不上，是php将我的电脑识别为x86，可在phpinfo()的Architecture一栏看到.    </p>
 <hr>
-<p>遇到报错，[Linter] Error running PHP Error: PHP Warning:  Module ‘yaf’ already loaded in Unknown on line 0.原因是重复加载，将php.ini中的extension=php_yaf.dll注释掉即可     </p>
-<p>原文解释：There are two ways to load most extensions in PHP. One is by compiling the extension directly into the PHP binary. The other is by loading a shared extension dynamically via an ini file. The errors indicate that dynamic extensions are being loaded via .ini files, even though they are already compiled into the PHP binary.   </p>
-<p>php有两种方式加载拓展，一种是通过直接编译进php二进制文件中，另一种是通过ini文件动态加载一个拓展。   </p>
-<hr>
-<h4 id="常用端口"><a href="#常用端口" class="headerlink" title="常用端口"></a>常用端口</h4><p>21:FTP文件传输服务;22:SSH命令行远程登录;25:SMTP邮件发送服务;80:HTTP网站服务;110:POP3邮件接收服务;139:SMB/SAMBA共享;143：IMAP邮件接收服务;443:HTTPS加密网站服务;3306:MYSQL数据库服务;3386:RDP远程桌面服务;6379:redis缓存服务器;8080:Proxy代理服务器  </p>
-<h4 id="include和require的区别"><a href="#include和require的区别" class="headerlink" title="include和require的区别"></a>include和require的区别</h4><p>  两者用途相同。    </p>
-<p>   require通常放在php的头部，导入文件。因为它无条件执行。     </p>
-<p>   include通常放在php代码中，需要时执行.     </p>
-<p>   本质区别在于对待错误的方式，require在存在错误时，会中断脚本，返回一个致命错误。include则不会中断执行，并弹出一个警告  </p>
-<h4 id="主观错误"><a href="#主观错误" class="headerlink" title="主观错误"></a>主观错误</h4><p> 刚一个memcache的取值，一直取不出来。结果是点错文件了……以后小心  </p>
-<h4 id="require-once-当前目录不用加”-“"><a href="#require-once-当前目录不用加”-“" class="headerlink" title="require_once 当前目录不用加”./“"></a>require_once 当前目录不用加”./“</h4><h4 id="exit会直接终止php脚本，if里面会导致下面无法输出了"><a href="#exit会直接终止php脚本，if里面会导致下面无法输出了" class="headerlink" title="exit会直接终止php脚本，if里面会导致下面无法输出了"></a>exit会直接终止php脚本，if里面会导致下面无法输出了</h4><h4 id="php函数内外的变量不通，所以有global存在"><a href="#php函数内外的变量不通，所以有global存在" class="headerlink" title="php函数内外的变量不通，所以有global存在"></a>php函数内外的变量不通，所以有global存在</h4><h4 id="is-array空数组为真"><a href="#is-array空数组为真" class="headerlink" title="is_array空数组为真"></a>is_array空数组为真</h4>
+        
+          <a class="article-more-a" href="/2018/10/12/杂项/#more">more >></a>
+        
       
 
       
@@ -704,38 +467,9 @@ $filter_XSS = new \FilterXSS(); //正确
         <p>  <code>$_SERVER[&#39;REQUEST_METHOD&#39;] == &#39;POST&#39;</code></p>
   <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php for ($x=0; $x&lt;8; $x++) &#123; ?&gt;</span><br><span class="line">    &lt;?php for ($y=0; $y&lt;5; $y++) &#123; ?&gt;</span><br><span class="line">        &lt;img src=&quot;output.php?n=&lt;?php echo 5*$x+$y; ?&gt;&quot; /&gt;</span><br><span class="line">    &lt;?php &#125; ?&gt;</span><br><span class="line">    &lt;br /&gt;</span><br><span class="line">&lt;?php &#125; ?&gt;</span><br></pre></td></tr></table></figure>
 <p>  <code>require_once __DIR__.&#39;/../vendor/autoload.php&#39;;</code></p>
-<hr>
-<p>  get_class 返回对象的类名<br>  class_implements 返回指定的类实现的所有接口。   </p>
-<hr>
-<p>  $a-&gt;b-&gt;c意思是说：<br>1、$a对象是由（$a = new App()）App对象创建的。<br>2、但是App类中还有一个字段（public $b;），该字段b也是一个对象。<br>3、App类中的字段b是Action类型的，由（$a = new Action()）App对象创建的。<br>4、但是Action类中还有一个字段（public $c;），该字段c也是一个对象。<br>就这样循环下去了……</p>
-<hr>
-<p>Dispatcher请求转发的意思。。。直接把客户端的请求在服务器处理以后跳转到下一个页面或者是处理类。。。此时的地址栏上的URL是不会变化的。。。。Redirect是重定向的意思。。。客户端的请求到达服务器处理以后，让客户端的页面链接重新定到另一个页面。。。此时地址栏的URL和你请求以前是不同</p>
-<hr>
-<p>如果想捕捉 print_r() 的输出，可使用 return 参数。若此参数设为 TRUE，print_r() 将不打印结果（此为默认动作），而是返回其输出。</p>
-<hr>
-<p>property_exists  检查对象或类是否具有该属性  </p>
-<hr>
-<p>0.14982900 1539836700  micortime();<br>1539836772.456 microtime(true);  </p>
-<hr>
-<p>$GLOBALS  </p>
-<hr>
-<p>在php代码中我们经常看到这样的写法：  </p>
-<p>$max = $a&gt;$b ? $a : $b;  </p>
-<p>mysql_connect($user,$passwd,$db) or die($mess);  </p>
-<p>下面对这两种常见的写法做以下说明：  </p>
-<p>第一种：典型的三元运算符形式  </p>
-<p>表达式的值成了，那么$max 的值是$a 否则$max 的值是$b，也就是说$max 的取值要么是$a 要么是$b，需要满足这样的情况  </p>
-<p>第二种：or 逻辑或运算  </p>
-<p>因为在PHP中并不区分数据类型，而且存在数据类型自动转换，所以在执行的时候会转换成bool值，并且or逻辑运算中会存在逻辑短路问题，刚好可以这样解释：  </p>
-<p>当or前面的表达式返还布尔值true的时候，or后面的表达式不再执行，但是当or前面的表达式返还false的时候，or后面的表达式要执行的。  </p>
-<p>之所以 用 or 可以达到，是因为当函数错误后，能执行or后面的函数，这是因为下面三点原因:<br>1.逻辑运算的运算顺序是从左向右<br>2.or运算符的左结合性<br>3.or运算中，如果运算时有值为真了，则整个表达式为真，后面不需要运算  </p>
-<p>终合上面三个因素，当or左侧函数运行正常(返回非假值)，则不会执行后面的函数<br>这里利用了or的这个特性，将die(终止并输出函数)用于此处，巧妙的实现了函数异常而报错的功能  </p>
-<p>常见的使用or的还有下面的这个  </p>
-<p>defined() or define();  </p>
-<p>检查一个常量是否定义过，如果没有定义那么就定义一个常量。      </p>
-<hr>
-<hr>
-
+        
+          <a class="article-more-a" href="/2018/10/12/看源码的零碎收集/#more">more >></a>
+        
       
 
       
@@ -811,72 +545,9 @@ $filter_XSS = new \FilterXSS(); //正确
         <p>JWT是一种用于双方之间传递安全信息的简洁的，url安全的表述性声明规范。JWT作为一个开放的标准（RTC 7519），定义了一种简洁的，自包含的方法用以通信的双方以json对象的形式安全的传递信息。因为数字签名的存在，这些信息是可信的，JWT可以使用HMAC算法或者是RSA的公钥秘钥进行签名，简洁（compact）可以通过url，post参数或者在HTTP header发送，因为数据量小，传输速度也很快，自包含（self-contained）:负载中包含了所有用户所需要的信息，避免了多次查询数据库。</p>
 <hr>
 <h4 id="JWT的主要应用场景"><a href="#JWT的主要应用场景" class="headerlink" title="JWT的主要应用场景"></a>JWT的主要应用场景</h4><p>   身份认证这种场景下，一旦用户完成了登录，在接下来的每个请求中包含JWT,可以用来验证用户身份以及对路由，服务和资源的访问权限进行验证。由于它的开销非常小，可以轻松的在不同域名的系统中进行传递，所有目前在单点登录（SSO）中比较广泛的使用了该技术。信息交换在通信的双方之间使用JWT对数据进行编码是一种非常安全的方式，由于它的信息是经过签名的，可以确保发送者发送的信息是没有经历伪造的。</p>
-<hr>
-<h4 id="JWT的结构"><a href="#JWT的结构" class="headerlink" title="JWT的结构"></a>JWT的结构</h4><p>   JWT包含了使用，分隔的三部分Header头部，Payload负载，Signature签名。<br>   其结构看起来是这样的，Header.Payload.Signature</p>
-<hr>
-<h4 id="Header"><a href="#Header" class="headerlink" title="Header"></a>Header</h4><p>在header中通常包含了两个部分，token类型和采用的加密算法那。{“alg”:”HS265”,”typ”:”JWT”},接下来对这部分使用Base64Url编码组成了JWT结构的第一部分</p>
-<hr>
-<h4 id="Payload"><a href="#Payload" class="headerlink" title="Payload"></a>Payload</h4><p>Token的第二部分是负载，它包含了claim，claim是一些实体（通常指用户）的状态和额外的元数据，有三种类型的claim：reserved,public和private。Reserved claaim是JWT预先定义的，在JWT中并不会强制使用它们，而是推荐使用，常用的有iss（签发着），exp（过期时间戳），sub（面向的用户），aud（接收方），iat（签发时间）。public claim：根据需要定义自己的字段，注意应该避免冲突。private claim：这些是自定义的字段，可以用来在双方之间交换信息负载使用。例子：{“sub”:”123456780”,”name”:”John Doe”,”admin”:true},上述的负载需要经过Base64Url编码后作为JWT结构的第二部分。</p>
-<hr>
-<h4 id="Signature"><a href="#Signature" class="headerlink" title="Signature"></a>Signature</h4><p>创建签名需要使用编码后的header和payload以及一个秘钥，使用header中指定签名算法进行签名。例如希望使用HMAC SHA256算法，那么签名应该使用下列方式创建HMACSHA256( base64UrlEncode(header) + “.” + base64UrlEncode(payload), secret）。签名用于验证消息的发送者以及消息是没有经历篡改的。完整的JWT格式的输出是以”.”分隔的三段Base64Url编码，如下<br><img src="http://source.aicode.cc/markdown/encoded-jwt3.png" alt=""><br><br><br>如何使用JWT?在身份鉴定的实现中，传统方法是在服务端存储一个session，给客户端返回一个cookie。而使用JWT之后，当用户使用它的认证信息登录系统之后，会返回给用户一个JWT，用户只需要本地保存该token（通常使用local storage，也可以使用cookie）即可，当用户希望访问一个收保护的路由或者资源的时候，通常应该在Authorization头部使用Bearer模式添加JWT，其内容看起来下面这样的：Authorization： Bearer<token>   </token></p>
-<p>因为用户的状态在服务端的内存中是不存储的，所以这是一种无状态的认证机制。服务端的保护路由将会检查请求头Authorization中的JWT信息，如果合法，则允许用户的行为。由于JWT是自包含的，因此减少了需要查询数据库的需要。 JWT的这些特性使得我们可以完全依赖其无状态的特性提供数据API服务，甚至是创建一个下载流服务。因为JWT并不使用Cookie的，所以你可以使用任何域名提供你的API服务而不需要担心跨域资源共享问题（CORS）。 下面的序列图展示了该过程：    </p>
-<p><img src="http://source.aicode.cc/markdown/jwt-diagram.png" alt=""></p>
-<p>为什么要使用JWT？ 相比XML格式，JSON更加简洁，编码之后更小，这使得JWT比SAML更加简洁，更加适合在HTML和HTTP环境中传递。 在安全性方面，SWT只能够使用HMAC算法和共享的对称秘钥进行签名，而JWT和SAML token则可以使用X.509认证的公私秘钥对进行签名。与简单的JSON相比，XML和XML数字签名会引入复杂的安全漏洞。 因为JSON可以直接映射为对象，在大多数编程语言中都提供了JSON解析器，而XML则没有这么自然的文档-对象映射关系，这就使得使用JWT比SAML更方便 java json web token工具类</p>
-<hr>
-<h4 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h4><p>  官网的例子：<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">HMACSHA256(</span><br><span class="line">  base64UrlEncode(header) + &quot;.&quot; +base64UrlEncode(payload),secret)</span><br></pre></td></tr></table></figure></p>
-<p>  自己写的</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">  function base64Url_encode($data)&#123;</span><br><span class="line">    return rtrim(strtr(base64_encode($data),&quot;+/&quot;,&quot;-_&quot;),&quot;=&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">  function base64Url_decode($data)&#123;</span><br><span class="line">    return base64_decode(str_pad(strstr($data,&quot;-_&quot;,&quot;+/&quot;),strlen($data)%4,&apos;=&apos;,STR_PAD_RIGHT));</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  public static function encode(array $payload,string $key,string $alg =&quot;SHA256&quot;)&#123;</span><br><span class="line">    $key = md5($key);</span><br><span class="line">    $jwt = self::urlsafeB64encode(Json_encode([&apos;type&apos;=&gt;&quot;JWT&quot;,&apos;alg&apos;=&gt;$alg])) . &quot;.&quot; . self:urlsafeB64encode(json_encode($payload));</span><br><span class="line">    return $jwt . &quot;.&quot; .self::signature ($jwt,$key,$alg);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  public static function signture(string $input,string $key ,string $alg)&#123;</span><br><span class="line">      return hash_hmac($alg, $input ,$key);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<p>  <img src="https://s1.ax1x.com/2018/10/12/itjym4.png" alt=""></p>
-<hr>
-<p>  登录过程：    </p>
-<ol>
-<li><p>第一次认证：第一次登录，用户从浏览器输入用户名/密码，提交后到服务器的登录处理的action层（Login Action）   </p>
-</li>
-<li><p>Login Action 调用认证服务进行用户名密码认证，如果认证通过，Login Action层调用用户信息服务获取用户信息（包括完整的用户信息及对应权限信息）。   </p>
-</li>
-<li><p>返回用户信息后，login action从配置文件中获取token签名生存的秘钥信息，进行token生成    </p>
-</li>
-<li><p>生成token的过程中可以调用第三方的JWT Lib生成签名后的JWT数据。  </p>
-</li>
-<li><p>完成JWT数据签名后，将其设置道cookie对象中，并重定向到首页，完成登录过程。    </p>
-</li>
-</ol>
-<hr>
-<p>   <img src="https://s1.ax1x.com/2018/10/12/itj60J.png" alt="">     </p>
-<h4 id="JWT服务端验证过程"><a href="#JWT服务端验证过程" class="headerlink" title="JWT服务端验证过程"></a>JWT服务端验证过程</h4><pre><code>基于token的认证机制会在每一次请求中都带上完成签名的token信息，这个token信息可能在cookie中，也可能在http的Authorization头中。     
-
-   1. 客户端（APP客户端或浏览器）通过GET或POST请求访问资源（页面或者调用API）    
-
-   2. 认证服务作为一个Middelware HOOK对请求进行拉拦截，首先在cookie中查找token信息，如果没有找到，则在HTTP Authorization Head中查找    
-
-   3. 如果找到Token信息，则根据配置文件中的签名加秘钥，调用JWT Lib对token信息进行解密和解码；    
-
-   4. 完成解码并验证签名通过后，对token中的exp，nbj，aud等信息进行验证。    
-
-   5. 全部通过后，根据获取用户的角色权限信息，进行对请求的资源的权限逻辑判断。    
-
-   6. 如果权限逻辑判断案通过则通过Response对象返回，否则返回HTTP 401     
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;?PHP</span><br><span class="line">    public static function decode(string $jwt,string $key)</span><br><span class="line">    &#123;</span><br><span class="line">      $token = explode(&quot;.&quot;$jwt);</span><br><span class="line">      $key  = md5($Key);</span><br><span class="line"></span><br><span class="line">      if(count($tonke) != 3)</span><br><span class="line">      &#123;</span><br><span class="line">        return false;</span><br><span class="line">      &#125;</span><br><span class="line">      list($header64,$payload64,$sing) =$token;</span><br><span class="line"></span><br><span class="line">      $header =json_decode(self::urlsafeB64Decode($header64),JSON_OBJECT_AS_ARRAY);</span><br><span class="line"></span><br><span class="line">      if(empty($header[&apos;alg&apos;]))</span><br><span class="line">        return false;</span><br><span class="line"></span><br><span class="line">      if(self::signature($header64 . &quot;.&quot; . $payload64 , $key ,$header[&apos;alg&apos;]) !==$sing)</span><br><span class="line">          return false;</span><br><span class="line"></span><br><span class="line">      $payload = json_decode(self::urlsafeB64Decode($payload64),JSON_OBJECT_AS_ARRAY);</span><br><span class="line"></span><br><span class="line">      $time = $_SERVER[&quot;REQUEST_TIME&quot;];</span><br><span class="line">      if(isset[&apos;iat&apos;] &amp;&amp; $payload[&apos;iat&apos; &gt; $time])</span><br><span class="line">        return false;</span><br><span class="line">      if(isset[&apos;exp&apos;] &amp;&amp; $payload[&apos;exp&apos; &lt; $time])</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">    return $payload;</span><br></pre></td></tr></table></figure>
-<hr>
-<h4 id="优秀之处"><a href="#优秀之处" class="headerlink" title="优秀之处"></a>优秀之处</h4><ul>
-<li><p>支持跨域访问：cokkie是不允许跨域访问的，这点对token机制不存在，前提是传输的用户认真信息通过HTTP头传输    </p>
-</li>
-<li><p>去耦：不需要绑定到一个特定的身份验证方案。token可以在任何地方生成，只要你的API被调用的时候，你可以进行token的生成调用即可。也可以用一套token认证代码来面对浏览器类客户和非浏览器类客户。   </p>
-</li>
-<li><p>更适合于移动应用： 当客户端是一个原生平台（ISO , ANDROID ,WINDOW 8等），cookie是不被支持的，这时采用token认证机制就会简单很多。    </p>
-</li>
-<li><p>CSRF： 因为不在依赖于cooke，所以就不需要 考虑对CSRF（跨站请求伪造）的防范。   </p>
-</li>
-<li><p>性能： token中包含足够多的信息，在后续请求中减少了查询数据库的几率   </p>
-</li>
-<li><p>基于标准化：你的API可以采用标准化的JSON Web Token（JWT），这个标准以及存在于多个后端库（.NET,RUBY,JAVA,PYTHON,PHP)和多家公司支持(FIREBASE,GOOGLE,MICROSOFT)  </p>
-</li>
-</ul>
-<hr>
-<h4 id="如何确保安全"><a href="#如何确保安全" class="headerlink" title="如何确保安全"></a>如何确保安全</h4><pre><code>1. 在传输敏感信息的过程中，建议采用HTTP5,通过SSL加密传输，确保通道的安全.     
-
-2. 在前后端做好过滤，防止SQL注入
-</code></pre>
+        
+          <a class="article-more-a" href="/2018/10/12/有关JWT/#more">more >></a>
+        
       
 
       
@@ -950,92 +621,10 @@ $filter_XSS = new \FilterXSS(); //正确
     <div class="article-entry" itemprop="articleBody">
       
         <h4 id="http协议本身没有状态"><a href="#http协议本身没有状态" class="headerlink" title="http协议本身没有状态"></a>http协议本身没有状态</h4><p>  网络通过http协议来传递信息，它无法记录用户上网的信息，上过哪个网站，有什么爱好，无法记录用户的ID和密码，这便是http协议的无状态，这是符合http协议本身的目的的。客户端只需要请求服务端下载文件等，并不需要记录彼此过去的行为。每一次请求都是独立的，好比一个顾客和一个自动贩售机的关系。</p>
-<h4 id="怎么理解cookie和session"><a href="#怎么理解cookie和session" class="headerlink" title="怎么理解cookie和session"></a>怎么理解cookie和session</h4><p>打个比方，一个小店老板搞促销，消费期间累积十个商品再送一个，以下有三种方式：    </p>
-<ul>
-<li><p>老板凭借记忆力去记住每一位客户的消费数量，但这不现实，这记忆力非人。同时http协议无状态，也不能要求协议本身记录信息。   </p>
-</li>
-<li><p>颁发积分卡.消费者来了的时候，办卡。每次消费，记上数量，还给消费者。当消费者再来时，携上积分卡，曾经的信息一目了然。这就是cookie技术，windows系统下，打开C:\Documents and Setting\用户名\cookie(不同浏览器的存储路径会不相同，这里仅举例),会发现很多.txt格式的小文件，这便是个人在诸多网站上的“积分卡”.    </p>
-</li>
-<li><p>仅有ID的会员卡。同样是办卡，这回给顾客的卡仅有ID。而老板以笔记形式记录客户的以往消费行为，并将笔记册子保存在店内。每次有会员卡来，对着册子，就能得到册子里记录过的消息。   </p>
-<p> 所以cookie的信息保存在客户端，内容繁多。而session的信息保存在服务端，仅有一条ID信息作为凭证交给了顾客为cookie。    </p>
-</li>
-</ul>
-<h4 id="cookie和session有什么作用"><a href="#cookie和session有什么作用" class="headerlink" title="cookie和session有什么作用"></a>cookie和session有什么作用</h4><p>  通常用来保持用户的登录状态，以及购物车等。</p>
-<h4 id="什么是cookie"><a href="#什么是cookie" class="headerlink" title="什么是cookie"></a>什么是cookie</h4><p>（以下为复制 ）</p>
-<p>1、什么是cookie？<br>0Cookie技术是一个非常有争议的技术，自经诞生它就成了广大网络用户和Web开发人员的一个争论焦点。有一些网络用户，甚至包括一些资深的Web专家也对它的产生和推广感到不满，这倒不是因为Cookie技术的功能太弱或别的技术性能上的原因，而仅仅是因为他们觉得Cookie的使用，对网络用户的隐私构成了危害。因为Cookie是由Web服务器保存在用户浏览器上的小文本文件，它包含有关用户的信息（如身份识别号码、密码、用户在Web站点上购物的方式或用户访问该站点的次数）。<br>  那么Cookie技术究竟怎样呢？是否真的给网络用户带来了个人隐私的危害呢？还是让我们看了下面的内容，再做回答吧。<br>    在WEB技术发展史上，Cookie技术的出现是一个重大的变革。最先是Netscape在它的Netscape Navigator 浏览器中引入了Cookie技术，从那时起，World Wide Web 协会就开始支持Cookie标准。以后又经过微软的大力推广（因为微软的IIS Web服务器所采用的ASP技术很大程度的使用了Cookie技术），即在微软的Internet Explorer浏览器中完全支持Cookie技术。到现在，绝大多数的浏览器都支持Cookie技术，或者至少兼容Cookie技术的使用。<br>    按照Netscape官方文档中的定义，Cookie是在HTTP协议下，服务器或脚本可以维护客户工作站上信息的一种方式。Cookie是由Web服务器保存在用户浏览器上的小文件，它可以包含有关用户的信息（如身份识别号码、密码、用户在Web站点购物的方式或用户访问该站点的次数）。无论何时用户链接到服务器，Web站点都可以访问Cookie信息。<br>  如果你使用的是windows系统，那么请打开C:\Documents and Settings\用户名\Cookies，你会发现该目录下有好多*.txt格式的小文件。那就是cookie文件。当然，在该目录下你也可能什么都发现不了，那时因为你新装了系统或者从未浏览过因特网，也或者你的浏览器禁用了cookie。否则该目录下总会有点东西的。<br>   通俗地讲，浏览器用一个或多个限定的文件来支持Cookie。这些文件在使用Windows操作系统的机器上叫做Cookie文件，在Macintosh 机器上叫做magic Cookie 文件，这些文件被网站用来在上面存储Cookie数据。网站可以在这些Cookie文件中插入信息，这样对有些网络用户就有些副作用。有些用户认为这造成了对个人隐私的侵犯，更糟的是，有些人认为Cookie是对个人空间的侵占，而且会对用户的计算机带来安全性的危害。<br>   目前有些Cookie是临时的，另一些则是持续的。临时的Cookie只在浏览器上保存一段规定的时间，一旦超过规定的时间该Cookie就会被系统清除。例如在PHP中Cookie被用来跟踪用户进程直到用户离开网站。持续的Cookie则保存在用户的Cookie文件中，下一次用户返回时，仍然可以对它进行调用。<br>   在Cookie文件中保存Cookie，一些用户会过分地认为这将带来很大的问题。主要是有些用户担心Cookie会跟踪用户网上冲浪的习惯，譬如用户喜爱到那些类型的站点、爱从事些什么活动等。害怕这种个人信息一旦落入一些别有用心的家伙手中，那么个人也就可能成为一大堆广告垃圾的对象，甚至遭到意外的损害。不过，这种担心压根儿不会发生，因为网站以外的用户是无法跨过网站来获得Cookie信息的。所以想以这种目的来应用Cookie是不可能的。不过，由于一些用户错误的理解以及“以讹传讹”，一些浏览器开发商别无选择，只好作出相适的响应（例如Netscape Navigator4.0和Internet Explorer3.0都提供了屏蔽Cookie的选项）。个人认为，无风不起浪，如果网站程序员没有严谨思路的话，cookie确实也存在些许安全问题，不过这些瑕疵并不足以掩盖cookie的优秀品质，大多数人还是非常乐意使用它的。<br>   对Cookie技术期待了这么久的结果是，迫使许多浏览器开发商在它们的浏览器中提供了对Cookie的灵活性控制功能。例如，目前的两大主流浏览器 Netscape Navigator 和 Internet Explorer是这样处理Cookie的:Netscape Navigator4.0不但可以接受Cookie进行警告，而且还可以屏蔽掉Cookie；InternetExplorer3.0也可以屏蔽 Cookie，但在Internet Explorer4.0中就只能进行接受警告而没有提供屏蔽选项，不过在Internet Explorer4.0之后的更新版本中又加入了屏蔽Cookie的功能选项。<br>   此外，很多最新的技术甚至已经可以在不能屏蔽Cookie的浏览器上进行Cookie的屏蔽了。例如，可以通过将Cookie文件设置成不同的类型来限制 Cookie的使用。但是，非常不幸地是，要是你想完全屏蔽Cookie的话，肯定会因此拒绝许多的站点页面。因为当今已经有许多Web站点开发人员爱上了Cookie技术的强大功能，例如Session对象的使用就离不开Cookie的支持。   </p>
-<h4 id="cookie的基本运行"><a href="#cookie的基本运行" class="headerlink" title="cookie的基本运行"></a>cookie的基本运行</h4><p>  当客户访问某个基于php的网站时，在php中可以使用setcookie函数生成一个cookie，系统处理后会将这个cookie发送并保存在客户端。cookie是http头的一部分，因此setcookie函数必须在任何内容输出之前调用，如同header（）。当客户再次访问时，浏览器会读取cookie添加到请求的头部，发送至服务端。php5中，cookie将被存储如$_Cookie之中。</p>
-<p>  又如：  </p>
-<ol>
-<li><p>小明访问某一个网站的登录页面，此时浏览器发送了一个http_request的请求，此时http header头中的cookie是空的。   </p>
-</li>
-<li><p>服务器收到请求后，接受小明的登录数据，验证后，会返回一个cookie。通常是将小明的用户名发送给客户端。像“set-Cookie: session-id=12456;”这个字符串童工http response 返回给客户端。   </p>
-</li>
-<li><p>浏览器收到http response后，发现携带有cookie，就将该信息写入浏览器的某个存储文件之中。    </p>
-<p>4.当小明再次访问时，请求的http request中就会有这个cookie   </p>
-<p>5.最后服务器端根据cookie进行操作，返回数据</p>
-</li>
-</ol>
-<h4 id="cookie注意事项"><a href="#cookie注意事项" class="headerlink" title="cookie注意事项"></a>cookie注意事项</h4><p>   setcookie不能有任何的输出。   </p>
-<h4 id="cookie和session的存储"><a href="#cookie和session的存储" class="headerlink" title="cookie和session的存储"></a>cookie和session的存储</h4><p>   session一般保存在服务器端文件中，php.ini中有个配置项–session.save_path=””,这里填写路径，将会使得session文件保存在该路径下。session文件的命名格式是“sess_[PHPSESSID]”。每一个文件，里面保存了会话的数据。而cookie保存在客户端浏览器中。</p>
-<hr>
-<h4 id="session文件具体内容"><a href="#session文件具体内容" class="headerlink" title="session文件具体内容"></a>session文件具体内容</h4><p> 保存的是一些序列化后的值<br> 每个session的值以分号；分开，比如’cityName:|s:3:”all”;’就是一个完整的session值     </p>
-<hr>
-<h4 id="SESSION-START-干了什么"><a href="#SESSION-START-干了什么" class="headerlink" title="SESSION_START()干了什么"></a>SESSION_START()干了什么</h4><p>  session_start()已经封装了发送cookie的操作（发送一个名称为PHPSESSID的cookie到浏览器）。这又涉及到了一个http的原理：头部信息必须在内容之前发送，所以在使用此函数之前，不能有任何的输出</p>
-<hr>
-<h4 id="session的调用机制"><a href="#session的调用机制" class="headerlink" title="session的调用机制"></a>session的调用机制</h4><ol>
-<li><p>用户球球服务端的login,php，填写数据提交    </p>
-</li>
-<li><p>服务端验证后提取用户的数据，并将数据存入session，将session_id存入cookie，发给客户端   </p>
-</li>
-<li><p>客户端保存  </p>
-</li>
-<li><p>再次访问时，这个cookie通过header头发动诶服务器端  </p>
-</li>
-<li><p>服务器获取</p>
-</li>
-</ol>
-<hr>
-<h4 id="共享session的方式"><a href="#共享session的方式" class="headerlink" title="共享session的方式"></a>共享session的方式</h4><ol>
-<li><p>在服务器端使用文件同步工具，复制session   </p>
-<ul>
-<li>速度慢，复制数据会出现延迟，不具备扩展性。开销大，对网络带宽和硬件都有大负担。  </li>
-</ul>
-</li>
-<li><p>session通过加密存储在客户端cookie   </p>
-<ul>
-<li><p>可减小服务器压力    </p>
-</li>
-<li><p>网络请求占用多    </p>
-</li>
-<li><p>cookie大小存在限制    </p>
-</li>
-<li><p>存在安全问题    </p>
-</li>
-<li><p>淘宝曾经用过这种方式，   </p>
-</li>
-</ul>
-</li>
-</ol>
-<ol start="3">
-<li><p>规则访问   </p>
-<ul>
-<li><p>设计一种算法（简单理解为规则），什么机制下session是保存在哪台服务器下的，那么读取的时候就按照这种规则去读取，就能定位到原来的服务器。其原理是存session和取session都是同一服务器在操作，就不会涉及到共享的问题。具体实现是通过约定一种分发机制，也叫作sticky模式（粘性会话模式），同一用户的访问请求都被派送到同一服务器上面。   </p>
-</li>
-<li><p>但若某台服务器挂了，会导致部分用户无法登录</p>
-</li>
-</ul>
-</li>
-</ol>
-<pre><code>****
-</code></pre><h4 id="session中间层"><a href="#session中间层" class="headerlink" title="session中间层"></a>session中间层</h4><p>   做一个session中间层，专门用来存储所有访问涉及到的session。也就是所有的session都存储在这里。服务器端统一从这里读取session数据。</p>
-<h4 id="NFS做中间层"><a href="#NFS做中间层" class="headerlink" title="NFS做中间层"></a>NFS做中间层</h4><p>   通过NFS的方式，各个php服务器操作session数据的时候，是读取本地磁盘啊目录。但实际上是一个网络共享文件。各个服务器实际上操作的都是同一目录的文件。</p>
-<h4 id="关系型数据库做中间层"><a href="#关系型数据库做中间层" class="headerlink" title="关系型数据库做中间层"></a>关系型数据库做中间层</h4><p>   把session数据存在数据库，那么连session_start都没有必要执行了。<br>   从数据库获取session数据，约定好数据过期，然后清理数据库的行。<br>   有些做法跟这种思想类似的是ecshop，phpcms      </p>
-<blockquote>
-<p>坏处：<br>   放在数据库内时，访问量小没有问题。大流量网站这么做，智慧拖慢速度，因为频繁查询数据库，会造成数据库性能瓶颈，在高并发情况下尤是如此。<br>  小网站，同时一两万在线的情况下，应该没有什么问题。</p>
-</blockquote>
-<hr>
-<h4 id="非关系型数据库"><a href="#非关系型数据库" class="headerlink" title="非关系型数据库"></a>非关系型数据库</h4><p>   将session数据保存在memcache，redis之类的内存数据库中，因为内存速度快，所以性能很高。大并发时候尤其何时，且方便统计在线人数，内存数据库系统能够控制内存中的过期数据自动失效（符合session的过期）</p>
-
+<h4 id="怎么理解cookie和session"><a href="#怎么理解cookie和session" class="headerlink" title="怎么理解cookie和session"></a>怎么理解cookie和session</h4>
+        
+          <a class="article-more-a" href="/2018/10/11/笔记记录-cookie和session相关/#more">more >></a>
+        
       
 
       
@@ -1138,18 +727,9 @@ $filter_XSS = new \FilterXSS(); //正确
 <li><p>503 服务器正忙</p>
 </li>
 </ul>
-<hr>
-<h4 id="GET和POST的区别"><a href="#GET和POST的区别" class="headerlink" title="GET和POST的区别"></a>GET和POST的区别</h4><ul>
-<li><p>get的重点在于从服务器上获取资源，post的重点在于向服务器端发送资源     </p>
-</li>
-<li><p>get传输数据是通过url请求，以field（字段）=value的形式，置于url后，并用“？”来连接，多个请求数据间用“&amp;”来连接，这种过程是用户可见的<br>post传输数据通过http的post机制，将字段和对应的值存放在请求实体中发送给服务器，这个过程是用户不可见的    </p>
-</li>
-<li><p>get传输的数据量小，因受url长度限制，但效率较高。 post可以传输大量数据，所以上传文件时只能用psot方式；   </p>
-</li>
-<li><p>get是不安全的，因为url可见，会泄露私密信息，如密码。所以post比get的安全性高。</p>
-</li>
-</ul>
-
+        
+          <a class="article-more-a" href="/2018/10/11/网络基础/#more">more >></a>
+        
       
 
       
@@ -1257,39 +837,9 @@ $filter_XSS = new \FilterXSS(); //正确
 </ul>
 </li>
 </ul>
-<ul>
-<li><p>数组的内部实现   </p>
-<ul>
-<li><p>实现数组使用了两个数据结构，一个是HashTable，另一个是bucket。    </p>
-</li>
-<li><p>HashTable 结构体用于保存整个数组需要的基本信息.   </p>
-</li>
-<li><p>Bucket 结构体用于保存具体的数据内容    </p>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="HashTable是什么"><a href="#HashTable是什么" class="headerlink" title="HashTable是什么"></a>HashTable是什么</h4><blockquote>
-<p>哈希表，是根据关键字（key value）而直接访问内存存储位置的数据结构。也就是说，它把键值通过一个函数的计算，映射到表中的某一个位置来访问记录，这加快了查找速度。使得普通的查找和插入，删除操作都可以在0（1）的时间内完成。这个映射函数成为哈希函数，存放记录的数组成为哈希数组。   </p>
-</blockquote>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">//HashTable的结构体表示</span><br><span class="line"></span><br><span class="line">typeof struct _hashtable&#123;</span><br><span class="line">  uint nTableSize;  //hash Bucket 的大小，最小为8，以2X增长</span><br><span class="line">  uint nTableMask; //nTableSize-1,索引取值的优化，193491848 &amp; 127</span><br><span class="line">  unit nNumOfElements; //hash Bucket 中当前存在的元素个数，count（）函数会直接返回此值</span><br><span class="line">  ulong nNextFreeElement; // 下一个数字索引的位置</span><br><span class="line">  Bucket *pInternalPointer; //当前遍历的指针。foreach比for快的原因之一，reset,current遍历函数使用   </span><br><span class="line">  Bucket *PListHead;  //存储数组头元素指针</span><br><span class="line">  Bucket *PListTail;  //存储数组尾元素指针</span><br><span class="line">  Bucket **arrBuckets;  //存储hash数组，实际的存储容器</span><br><span class="line">  unsigned char nApplyCount; // 记录当前hash Bucket被递归返回的次数（防止多次递归）</span><br><span class="line">&#125; HashTable；</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">typeof struct bucket&#123;</span><br><span class="line">  ulong h; //对char *key进行hash之后的值，或者用户指定的数字索引值</span><br><span class="line">  uint nKeyLength； //hash关键字的长度，如果数组索引为数字，此值为0</span><br><span class="line">  viod *pDate； //指向value，一般是用户数据的副本，如果是指针数据，则指向pDataPtr</span><br><span class="line">  void *pDataPrt；//如果是指针数据，此值回指向真正的value，同时上面pData会指向此值</span><br><span class="line">  struct bucket *pListNext； //整个hash表的下一个元素</span><br><span class="line">  struct bucket *pListLsst； //整个hash表该元素的上一个元素</span><br><span class="line">  struct bucket *pNext；//存放在同一个hash bucket内的下一个元素</span><br><span class="line">  struct bucket *pLast；//存放在同一个hash bucket内的上一个元素</span><br><span class="line">  const char *arKey;保持当前key所对应的字符串值</span><br><span class="line">&#125; Bucket;</span><br></pre></td></tr></table></figure>
-<h4 id="数组函数分类"><a href="#数组函数分类" class="headerlink" title="数组函数分类"></a>数组函数分类</h4><ul>
-<li><p>数组遍历相关数组：prev，next，current，end，reset，each等</p>
-</li>
-<li><p>数组排序相关 如sort，rsort，asort，arsort，ksort，krsort，uasort，uksort等    </p>
-</li>
-<li><p>数组查找相关： 如 in_array(),array_search,array_key_exists等    </p>
-</li>
-<li><p>数组分割，合并相关： array_slice,array_splice,implode,array_chunk,array_conbine等     </p>
-</li>
-<li><p>数组交并差 ：array_merge,array_diff,array_diff_<em>,array_intersect,array_intersect_</em>等    </p>
-</li>
-<li><p>作为stack/queue的容器 : array_push,array_pop,array_shift    </p>
-</li>
-<li><p>其他的数组操控  :array_fill,array_flip,array_sum,array_reverse等</p>
-</li>
-</ul>
-
+        
+          <a class="article-more-a" href="/2018/10/11/php数组基础/#more">more >></a>
+        
       
 
       
@@ -1472,6 +1022,85 @@ $filter_XSS = new \FilterXSS(); //正确
 
 
   
+    <article id="post-php的底层运行原理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/11/php的底层运行原理/">php的底层运行原理</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/11/php的底层运行原理/" class="archive-article-date">
+  	<time datetime="2018-10-11T04:01:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="php的底层运行原理"><a href="#php的底层运行原理" class="headerlink" title="php的底层运行原理"></a>php的底层运行原理</h3><ul>
+<li><p>php的运行模式<br>SAPI : Server Application Programming  Interface 服务器端应用编程接口。它就是php和其他应用交互的接口，php脚本要执行有很多种方式，通过web服务器，或者直接在命令行下，也可以直接嵌入在其他程序中。      </p>
+<ul>
+<li><p>APIS 提供了一个和外部通信的接口，常见有五大运行模式：    </p>
+        
+          <a class="article-more-a" href="/2018/10/11/php的底层运行原理/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">php</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/11/php的底层运行原理/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
@@ -1573,10 +1202,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">memcache</a>
               </li>
              
@@ -1585,11 +1210,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
               </li>
              
               <li class="article-tag-list-item">

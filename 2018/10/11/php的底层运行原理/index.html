@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>php的底层运行原理 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="php的底层运行原理 php的运行模式SAPI : Server Application Programming  Interface 服务器端应用编程接口。它就是php和其他应用交互的接口，php脚本要执行有很多种方式，通过web服务器，或者直接在命令行下，也可以直接嵌入在其他程序中。        APIS 提供了一个和外部通信的接口，常见有五大运行模式：      CGI(Common Ga">
+  <meta name="description" content="php的底层运行原理 php的运行模式SAPI : Server Application Programming  Interface 服务器端应用编程接口。它就是php和其他应用交互的接口，php脚本要执行有很多种方式，通过web服务器，或者直接在命令行下，也可以直接嵌入在其他程序中。        APIS 提供了一个和外部通信的接口，常见有五大运行模式：">
 <meta name="keywords" content="php">
 <meta property="og:type" content="article">
 <meta property="og:title" content="php的底层运行原理">
 <meta property="og:url" content="http://yoursite.com/2018/10/11/php的底层运行原理/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="php的底层运行原理 php的运行模式SAPI : Server Application Programming  Interface 服务器端应用编程接口。它就是php和其他应用交互的接口，php脚本要执行有很多种方式，通过web服务器，或者直接在命令行下，也可以直接嵌入在其他程序中。        APIS 提供了一个和外部通信的接口，常见有五大运行模式：      CGI(Common Ga">
+<meta property="og:description" content="php的底层运行原理 php的运行模式SAPI : Server Application Programming  Interface 服务器端应用编程接口。它就是php和其他应用交互的接口，php脚本要执行有很多种方式，通过web服务器，或者直接在命令行下，也可以直接嵌入在其他程序中。        APIS 提供了一个和外部通信的接口，常见有五大运行模式：">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-11T06:57:33.457Z">
+<meta property="og:updated_time" content="2018-10-22T13:56:11.319Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="php的底层运行原理">
-<meta name="twitter:description" content="php的底层运行原理 php的运行模式SAPI : Server Application Programming  Interface 服务器端应用编程接口。它就是php和其他应用交互的接口，php脚本要执行有很多种方式，通过web服务器，或者直接在命令行下，也可以直接嵌入在其他程序中。        APIS 提供了一个和外部通信的接口，常见有五大运行模式：      CGI(Common Ga">
+<meta name="twitter:description" content="php的底层运行原理 php的运行模式SAPI : Server Application Programming  Interface 服务器端应用编程接口。它就是php和其他应用交互的接口，php脚本要执行有很多种方式，通过web服务器，或者直接在命令行下，也可以直接嵌入在其他程序中。        APIS 提供了一个和外部通信的接口，常见有五大运行模式：">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -48,7 +48,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">汤</a></h1>
@@ -106,7 +106,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">汤</h1>
@@ -179,6 +179,7 @@
 <li><p>php的运行模式<br>SAPI : Server Application Programming  Interface 服务器端应用编程接口。它就是php和其他应用交互的接口，php脚本要执行有很多种方式，通过web服务器，或者直接在命令行下，也可以直接嵌入在其他程序中。      </p>
 <ul>
 <li><p>APIS 提供了一个和外部通信的接口，常见有五大运行模式：    </p>
+<a id="more"></a>
 <ul>
 <li><p>CGI(Common Gateway Interface 通用网关接口)     </p>
 </li>
@@ -211,7 +212,7 @@
 <ul>
 <li>利用cronttab去跑php，可以给服务器减压，当然在这里有一个条件，那就是实时性不高。比如：sns中的好友动态，这个实时性要求不高，但是数据量比较大，这个时候定时跑的话，会给web服务器和数据库服务器分担不少的压力。</li>
 <li>就是我们要定时去完成某一事情，比如，我要删除一个月前的用户留言，这个时候，写个php脚本用crontab去执行，一天跑一次，而不是手动去执行php脚本</li>
-<li>无法为普通用户提供http服务<a id="more"></a>
+<li>无法为普通用户提供http服务<!--more-->
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">    print_r($argv);</span><br><span class="line"></span><br><span class="line">    echo &quot;\n&quot;;</span><br><span class="line">    echo $argc;</span><br><span class="line">    echo &quot;\n&quot;;</span><br><span class="line">?&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">root@ubuntu :~$ php test,php aaa ccc bbb</span><br><span class="line">array</span><br><span class="line">(</span><br><span class="line">  [0]  =&gt; test.php //参数0，文件本身</span><br><span class="line">  [1]  =&gt; aaa //参数1</span><br><span class="line">  [2]  =&gt; ccc //参数2</span><br><span class="line">  [3]  =&gt; bbb //参数3</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">4  //$argc的值，参数的总数</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
@@ -617,10 +618,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">memcache</a>
               </li>
              
@@ -629,11 +626,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
               </li>
              
               <li class="article-tag-list-item">

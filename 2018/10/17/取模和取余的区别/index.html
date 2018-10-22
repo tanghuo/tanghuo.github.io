@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="取模和取余的区别其实取模和取余在目标上是一致的，但是因为语言对取余和取模上定义的不同，导致得到的结果不同。 对取余和取模定义不同的语言中，两者的不同点只有一个 取余运算在计算商值向0方向舍弃小数位取模运算在计算商值向负无穷方向舍弃小数位同时，也可以这样理解： 取余，遵循尽可能让商大的原则取模，遵循尽可能让商小的原则从上面的区别可以总结出，取余（rem）和取模（mod）在被除数、除数同号时，结果是等">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-17T03:31:13.721Z">
+<meta property="og:updated_time" content="2018-10-22T13:57:15.502Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="取模和取余的区别">
 <meta name="twitter:description" content="取模和取余的区别其实取模和取余在目标上是一致的，但是因为语言对取余和取模上定义的不同，导致得到的结果不同。 对取余和取模定义不同的语言中，两者的不同点只有一个 取余运算在计算商值向0方向舍弃小数位取模运算在计算商值向负无穷方向舍弃小数位同时，也可以这样理解： 取余，遵循尽可能让商大的原则取模，遵循尽可能让商小的原则从上面的区别可以总结出，取余（rem）和取模（mod）在被除数、除数同号时，结果是等">
@@ -47,7 +47,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">汤</a></h1>
@@ -105,7 +105,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">汤</h1>
@@ -179,11 +179,10 @@
 <p>取余运算在计算商值向0方向舍弃小数位<br>取模运算在计算商值向负无穷方向舍弃小数位<br>同时，也可以这样理解：</p>
 <p>取余，遵循尽可能让商大的原则<br>取模，遵循尽可能让商小的原则<br>从上面的区别可以总结出，取余（rem）和取模（mod）在被除数、除数同号时，结果是等同的，异号时会有区别，所以要特别注意异号的情况。</p>
 <p>下面来看一些例子</p>
-<p>取模</p>
-<p>5 mod 3 = 2<br>-5 mod 3 = 1<br>5 mod -3 = -1<br>-5 mod -3 = -2<br>取余</p>
+<p>取模<br><a id="more"></a><br>5 mod 3 = 2<br>-5 mod 3 = 1<br>5 mod -3 = -1<br>-5 mod -3 = -2<br>取余</p>
 <p>5 rem 3 = 2<br>-5 rem 3 = -2<br>5 rem -3 = 2<br>-5 rem -3 = -2<br>经过测试，在C/C++, C#, JAVA, PHP这几门主流语言中，’%’运算符都是做取余运算，而在python中的’%’是做取模运算。</p>
 <p>此外，余数在数学中的定义是始终大于等于0的，而对于某些编程语言的取余运算不是按照上面的定义来执行的，因此才会出现余数小于0的情况。</p>
-<h2 id="说了这么多，我们在使用取模（取余）运算时要注意的地方有一个，当除数和被除数出现异号的情况时，程序移植的时候要特别小心，因为不同语言对取模和取余的定义可能是不同的。"><a href="#说了这么多，我们在使用取模（取余）运算时要注意的地方有一个，当除数和被除数出现异号的情况时，程序移植的时候要特别小心，因为不同语言对取模和取余的定义可能是不同的。" class="headerlink" title="说了这么多，我们在使用取模（取余）运算时要注意的地方有一个，当除数和被除数出现异号的情况时，程序移植的时候要特别小心，因为不同语言对取模和取余的定义可能是不同的。"></a>说了这么多，我们在使用取模（取余）运算时要注意的地方有一个，当除数和被除数出现异号的情况时，程序移植的时候要特别小心，因为不同语言对取模和取余的定义可能是不同的。</h2><p>作者：panyyer<br>来源：CSDN<br>原文：<a href="https://blog.csdn.net/coder_panyy/article/details/73743722?utm_source=copy" target="_blank" rel="noopener">https://blog.csdn.net/coder_panyy/article/details/73743722?utm_source=copy</a><br>版权声明：本文为博主原创文章，转载请附上博文链接！</p>
+<p>说了这么多，我们在使用取模（取余）运算时要注意的地方有一个，当除数和被除数出现异号的情况时，程序移植的时候要特别小心，因为不同语言对取模和取余的定义可能是不同的。</p>
 
       
 
@@ -418,10 +417,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">memcache</a>
               </li>
              
@@ -430,11 +425,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
               </li>
              
               <li class="article-tag-list-item">

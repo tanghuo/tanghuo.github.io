@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="简单框架设计  目录结构    admin入口文件      123456789101112131415161718192021222324252627282930&amp;lt;?php    header(&amp;quot;content-type:text/html;charset=utf-8&amp;quot;);//设置框架编码    define(&amp;apos;APP_PATH&amp;apos;,__DIR__.&amp;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-14T10:08:12.810Z">
+<meta property="og:updated_time" content="2018-10-22T13:57:39.847Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简单框架设计">
 <meta name="twitter:description" content="简单框架设计  目录结构    admin入口文件      123456789101112131415161718192021222324252627282930&amp;lt;?php    header(&amp;quot;content-type:text/html;charset=utf-8&amp;quot;);//设置框架编码    define(&amp;apos;APP_PATH&amp;apos;,__DIR__.&amp;">
@@ -47,7 +47,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">汤</a></h1>
@@ -105,7 +105,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">汤</h1>
@@ -182,7 +182,7 @@
 <ul>
 <li>admin入口文件    </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">    header(&quot;content-type:text/html;charset=utf-8&quot;);//设置框架编码</span><br><span class="line">    define(&apos;APP_PATH&apos;,__DIR__.&apos;/&apos;);//设置时间区域</span><br><span class="line">    define(&quot;Lib&quot;,&quot;./myphp/&quot;);//定义项目路径常量</span><br><span class="line">    define(&quot;Resource&quot;,APP_PATH.&apos;Resource&apos;);//定义框架目录常量</span><br><span class="line">    ini_set(&quot;display_errors&quot;,1);//定义项目资源目录常量</span><br><span class="line">    ini_set(&quot;data.timezone&quot;,&quot;Asia/Shanghai&quot;);//是否抛出错误</span><br><span class="line"></span><br><span class="line">```     </span><br><span class="line"></span><br><span class="line">#### display_errors介绍    </span><br><span class="line"></span><br><span class="line">display_errors介绍：错误回显，一般常用语开发模式，但是很多应用在正式环境中也忘记了关闭此选项。错误回显可以暴露出非常多的敏感信息，为攻击者下一步攻击提供便利。推荐关闭此选项。 display_errors = On 开启状态下，若出现错误，则报错，出现错误提示 dispaly_errors = Off 关闭状态下，若出现错误，则提示：服务器错误。但是不会出现错误提示   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#### 自动加载类的介绍    </span><br><span class="line"></span><br><span class="line">在编写面向对象（OOP） 程序时，很多开发者为每个类新建一个 PHP 文件。 这会带来一个烦恼：每个脚本的开头，都需要包含（include）一个长长的列表（每个类都有个文件）。在 PHP 5 中，已经不再需要这了。 spl_autoload_register() 函数可以注册任意数量的自动加载器，当使用尚未被定义的类（class）和接口（interface）时自动去加载。通过注册自动加载器，脚本引擎在 PHP 出错失败前有了最后一个机会加载所需的类。  </span><br><span class="line">#### spl_autoload_register   </span><br><span class="line"></span><br><span class="line">这个是框架的关键，它能够自动加载未定义的类，接下来通过将类分布在各文档，用路径寻找到，依次前后拼接，形成一个完整的文件,admin获得index。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#### 临时   </span><br><span class="line"></span><br><span class="line">set_error_handler(&quot;customError&quot;) 不仅可以接受函数，还可以接受 类的方法（公开的静态方法 及 公开的非静态方法 都可以），但需要以 数组形式 传递，数组的第一值为“类名”，第二个参数为“方法名”      </span><br><span class="line"></span><br><span class="line">简单示例</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">    header(&quot;content-type:text/html;charset=utf-8&quot;);//设置框架编码</span><br><span class="line">    define(&apos;APP_PATH&apos;,__DIR__.&apos;/&apos;);//设置时间区域</span><br><span class="line">    define(&quot;Lib&quot;,&quot;./myphp/&quot;);//定义项目路径常量</span><br><span class="line">    define(&quot;Resource&quot;,APP_PATH.&apos;Resource&apos;);//定义框架目录常量</span><br><span class="line">    ini_set(&quot;display_errors&quot;,1);//定义项目资源目录常量</span><br><span class="line">    ini_set(&quot;data.timezone&quot;,&quot;Asia/Shanghai&quot;);//是否抛出错误</span><br><span class="line"></span><br><span class="line">```     </span><br><span class="line"></span><br><span class="line">#### display_errors介绍    </span><br><span class="line"></span><br><span class="line">display_errors介绍：错误回显，一般常用语开发模式，但是很多应用在正式环境中也忘记了关闭此选项。错误回显可以暴露出非常多的敏感信息，为攻击者下一步攻击提供便利。推荐关闭此选项。 display_errors = On 开启状态下，若出现错误，则报错，出现错误提示 dispaly_errors = Off 关闭状态下，若出现错误，则提示：服务器错误。但是不会出现错误提示   </span><br><span class="line"></span><br><span class="line">&lt;!--more --&gt;</span><br><span class="line">#### 自动加载类的介绍    </span><br><span class="line"></span><br><span class="line">在编写面向对象（OOP） 程序时，很多开发者为每个类新建一个 PHP 文件。 这会带来一个烦恼：每个脚本的开头，都需要包含（include）一个长长的列表（每个类都有个文件）。在 PHP 5 中，已经不再需要这了。 spl_autoload_register() 函数可以注册任意数量的自动加载器，当使用尚未被定义的类（class）和接口（interface）时自动去加载。通过注册自动加载器，脚本引擎在 PHP 出错失败前有了最后一个机会加载所需的类。  </span><br><span class="line">#### spl_autoload_register   </span><br><span class="line"></span><br><span class="line">这个是框架的关键，它能够自动加载未定义的类，接下来通过将类分布在各文档，用路径寻找到，依次前后拼接，形成一个完整的文件,admin获得index。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#### 临时   </span><br><span class="line"></span><br><span class="line">set_error_handler(&quot;customError&quot;) 不仅可以接受函数，还可以接受 类的方法（公开的静态方法 及 公开的非静态方法 都可以），但需要以 数组形式 传递，数组的第一值为“类名”，第二个参数为“方法名”      </span><br><span class="line"></span><br><span class="line">简单示例</span><br></pre></td></tr></table></figure>
 <p>框架入口<br>&lt;?php<br>//框架的运行方法<br>class Myphp<br>{<br>    public function run()<br>    {<br>        spl_autoload_register(array($this,’load’));<br>        // set_error_handler(array($this,’AppError’));<br>        // set_exception_handler(array($this,’AppException’));<br>        //上面两个注释是错误log，暂不开启</p>
 <pre><code>    $temp = explode(&quot;/&quot;, $_SERVER[&apos;REDIRECT_URL&apos;]);
     var_dump($temp);
@@ -496,10 +496,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">memcache</a>
               </li>
              
@@ -508,11 +504,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
               </li>
              
               <li class="article-tag-list-item">

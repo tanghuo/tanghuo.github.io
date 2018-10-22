@@ -8,13 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="目标资深">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="目标资深">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="目标资深">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -43,7 +46,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">汤</a></h1>
@@ -101,7 +104,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">汤</h1>
@@ -151,79 +154,6 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-    <article id="post-mian" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/22/mian/">mian</a>
-    </h1>
-  
-
-        
-        <a href="/2018/10/22/mian/" class="archive-article-date">
-  	<time datetime="2018-10-22T13:36:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-22</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">mian</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/10/22/mian/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
     <article id="post-php手册杂" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -392,12 +322,10 @@ R(&apos;模块/控制器/方法&apos;);
 <p>取余运算在计算商值向0方向舍弃小数位<br>取模运算在计算商值向负无穷方向舍弃小数位<br>同时，也可以这样理解：</p>
 <p>取余，遵循尽可能让商大的原则<br>取模，遵循尽可能让商小的原则<br>从上面的区别可以总结出，取余（rem）和取模（mod）在被除数、除数同号时，结果是等同的，异号时会有区别，所以要特别注意异号的情况。</p>
 <p>下面来看一些例子</p>
-<p>取模</p>
-<p>5 mod 3 = 2<br>-5 mod 3 = 1<br>5 mod -3 = -1<br>-5 mod -3 = -2<br>取余</p>
-<p>5 rem 3 = 2<br>-5 rem 3 = -2<br>5 rem -3 = 2<br>-5 rem -3 = -2<br>经过测试，在C/C++, C#, JAVA, PHP这几门主流语言中，’%’运算符都是做取余运算，而在python中的’%’是做取模运算。</p>
-<p>此外，余数在数学中的定义是始终大于等于0的，而对于某些编程语言的取余运算不是按照上面的定义来执行的，因此才会出现余数小于0的情况。</p>
-<h2 id="说了这么多，我们在使用取模（取余）运算时要注意的地方有一个，当除数和被除数出现异号的情况时，程序移植的时候要特别小心，因为不同语言对取模和取余的定义可能是不同的。"><a href="#说了这么多，我们在使用取模（取余）运算时要注意的地方有一个，当除数和被除数出现异号的情况时，程序移植的时候要特别小心，因为不同语言对取模和取余的定义可能是不同的。" class="headerlink" title="说了这么多，我们在使用取模（取余）运算时要注意的地方有一个，当除数和被除数出现异号的情况时，程序移植的时候要特别小心，因为不同语言对取模和取余的定义可能是不同的。"></a>说了这么多，我们在使用取模（取余）运算时要注意的地方有一个，当除数和被除数出现异号的情况时，程序移植的时候要特别小心，因为不同语言对取模和取余的定义可能是不同的。</h2><p>作者：panyyer<br>来源：CSDN<br>原文：<a href="https://blog.csdn.net/coder_panyy/article/details/73743722?utm_source=copy" target="_blank" rel="noopener">https://blog.csdn.net/coder_panyy/article/details/73743722?utm_source=copy</a><br>版权声明：本文为博主原创文章，转载请附上博文链接！</p>
-
+<p>取模<br>
+        
+          <a class="article-more-a" href="/2018/10/17/取模和取余的区别/#more">more >></a>
+        
       
 
       
@@ -467,46 +395,10 @@ R(&apos;模块/控制器/方法&apos;);
 <li>PUNSUBSCRIBE  </li>
 <li>PUBSUB<br>PUBSUB subcommand<br>PUBSUB CHANNELS<br>PUBSUB NUMSUB<br>PUBSUB NUMPAT  </li>
 </ul>
-<p>案例：<br>消息队列  </p>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><ul>
-<li>ECHO<br>ECHO message  </li>
-<li>PING  </li>
-<li>QUIT  </li>
-<li>SELECT<br>SELECT index  【默认0号数据库】  </li>
-<li>AUTH<br>AUTH password  </li>
-<li>CONFIG GET<br>CONFIG GET  parameter  </li>
-<li>CONFIG RESETSTAT  </li>
-<li>CONFIG SET<br>CONFIG SET parameter value  </li>
-<li>CONFIG REWRITE  </li>
-<li>CLIENT LIST  </li>
-<li>CLIENT SETNAME  </li>
-<li>CLIENT KILL  </li>
-<li>DBSIZE  </li>
-<li>FLUSHDB  </li>
-<li>INFO  </li>
-<li>MONITOR  </li>
-<li>TIME   </li>
-<li>SHOWDOWN   </li>
-</ul>
-<p>redis 数据持久化<br>HYPERLOGLOG  </p>
-<ul>
-<li>PFADD<br>PFADD key element 【element。。】<br>PFCOUNT<br>PFCOUNT key 【key。。】<br>PFMERGE<br>PRMERGE destkey key 【key。。】<br>|<br>GEO 地理位置存储  </li>
-<li>GETADD<br>GEOADD key longitudu latitude member 【。。。】  </li>
-<li>GETPOS<br>GETPOS key member 【member。。】  </li>
-<li>GETDIST<br>GETDIST key member member2 【unit】  </li>
-<li>GEORADIUS<br>…..<br>方圆多少里内的用户？   </li>
-<li>GEORADIUSBYMEMBER  </li>
-<li>GEOHASH  </li>
-</ul>
-<h1 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h1><ul>
-<li>MULTI<br>开启事务  </li>
-<li>EXEC<br>执行事务块内的命令  </li>
-<li>DISCARD<br>取消事务，放弃执行命令  </li>
-<li>WATCH<br>WATCH key 【key。。】<br>监控，如果key改变，则事务被打断   </li>
-<li>UNWATCH  </li>
-<li></li>
-</ul>
-
+<p>案例：<br>消息队列<br>
+        
+          <a class="article-more-a" href="/2018/10/16/redis相关2/#more">more >></a>
+        
       
 
       
@@ -569,7 +461,8 @@ R(&apos;模块/控制器/方法&apos;);
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="redis相关"><a href="#redis相关" class="headerlink" title="redis相关"></a>redis相关</h1><h1 id="key"><a href="#key" class="headerlink" title="key"></a>key</h1><ul>
-<li>key基本操作  <ul>
+<li><p>key基本操作  </p>
+<ul>
 <li>key<br>key pattern<br>用法:?/*/[ae]/[^ae]/[a-c]</li>
 <li>EXISTS<br>EXISTS key [key …]<br>key是否存在<br>返回值 1 或者 0  </li>
 <li>SACN<br>SCAN cursor[MATCH pattern] [COUNT count]<br>SCAN命令每次被调用后，都会向用户返回一个新的游标，用户在下次迭代时需要使用这个新游标作为SACN命令的游标参数，以此延续之前的迭代过程<br>返回值：完整遍历的数据  </li>
@@ -580,178 +473,10 @@ R(&apos;模块/控制器/方法&apos;);
 <li>RENAAMENX<br>RENAMENX KEY NEWKEY  </li>
 <li>TOUCH<br>TOUCH KEY<br>修改key的最后访问时间为当前时间<br>返回值：返回设置成功的key的数量  </li>
 <li>DEL<br>DEL KEY  </li>
-<li>UNLINK<br>UNLINK KEY [KEY..]<br>非阻塞删除指定key    </li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>key的过期设定  <ul>
-<li>EXPIRE<br>EXPIRE key seconds<br>为key设定生存时间，过期自动删除<br>返回值：成功为1，失败为0；  </li>
-<li>EXPIREAT<br>EXPIREAT key timestamp  </li>
-<li>PEXPIRE<br>时间为毫秒   </li>
-<li>PEXPIREAT  </li>
-<li>TTL<br>TTL key<br>以秒为单位，返回给定key的生存时间  </li>
-<li>PTTL<br>毫秒单位  </li>
-<li>PERSIST<br>PERSIST key<br>移除生存时间  </li>
-<li>DUMP<br>DUMP key<br>序列化key，并返回序列化后的值，不包括生存信息  </li>
-<li>RESTIRE<br>RESTORE key ttl serialized-value[REPLACE]<br>反序列化给定key的序列化值，并将它和给定key关联，参数ttl以浩渺设定生存时间，若0，则不设置。</li>
-<li>SORT<br>….</li>
-</ul>
-</li>
-</ul>
-<ul>
-<li>单个实例内多库间的数据迁移操作   <ul>
-<li>MOVE<br>MOVE key db</li>
-</ul>
-</li>
-<li>多个实例内的数据迁移操作    <ul>
-<li>MIGRATE<br>MIGRATE host port key  destination-db timeout[COPY ][REPLACE]<br>返回值：ok  </li>
-</ul>
-</li>
-</ul>
-<h1 id="字符串-string"><a href="#字符串-string" class="headerlink" title="字符串  string"></a>字符串  string</h1><ul>
-<li>应用场景<br>高速缓存html片段或者页面<br>高速缓存关系型数据库查询的数据结果<br>高速缓存会话控制数据<br>分布式锁<br>防止重复提交<br>存储设置固定格式的字符串序列（例如：时间序列）<br>统计网站访问者数量<br>每天注册用户数<br>限制API在某一时段的访问次数<br>用户签到<br>统计活跃用户<br>用户在线状态  </li>
-</ul>
-<ul>
-<li>基本命令  <h5 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h5><ul>
-<li>SET<br>SET key value [EX][PX][NX|XX]<br>覆盖，SET设置之后，之前的生存时间会被丢弃<br>返回 OK 和 nil<br>nx：如果key不存在则建立<br>　　　xx：如果key存在则修改其值  </li>
-<li>MSET<br>MSET key value【key value。。。】<br>同时设置多个key，覆盖<br>原子性， 会同时设置或者失败    </li>
-<li>SETEX<br>SETEX key seconds value<br>原子性<br>成功ok  </li>
-<li>PSETEX</li>
-<li>SETNX<br>SETNX key value<br>我如果key不存在，设定value  </li>
-<li>MSETNX  </li>
-<li>SETRABGE<br>SETRANGE key offset value<br>如果键不存在，就设置一个新的，并且补充offset个null，在加入value。换句话说，值为offet个null+value<br>最大值为2的29次方-1  </li>
-<li>APPEND<br>APPEND key value<br>如果key存在，追加value内容<br>如果不存在 ，会创建一个新的key，并设置其值为空字符串，然后追加value内容<br>返回追加后的字符串长度<h5 id="查询"><a href="#查询" class="headerlink" title="查询"></a>查询</h5></li>
-<li>GET<br>GET key<br>如果不存在，返回nil<br>如果不是string，返回错误  </li>
-<li>MGET<br>MGET key 【key。。。】<br>列出所有键的纸，绝不会执行失败，失败或string返回nil  </li>
-<li>GETRANGE<br>GETRANGE key start end<br>可以是负数，-1代表最后一个字符  </li>
-<li>STRLEN<br>STRLEN key<br>如果不是字符串，返回错误  </li>
-<li>GETSET<br>GETSET key value<br>原子的给一个key设置value，并给返回旧的值   </li>
-</ul>
-</li>
-</ul>
-<p>  字符串的设置和查询相应场景：  </p>
-<ul>
-<li>案例一 高速缓存（HTML/DATA/SESSION）  </li>
-<li>案例二：分布式锁   </li>
-<li>案例三：防止重复提交   </li>
-<li><p>案例四：存储设置固定格式的字符串序列   </p>
-<h1 id="键的计数"><a href="#键的计数" class="headerlink" title="键的计数"></a>键的计数</h1><ul>
-<li>INCR<br>INCR key<br>将key中存储的值增加一，如果key不存在，那么key会被初始化为0，然后再INCR。本操作的值限制在64位有符号数字表示之间，key的值必须是整型    </li>
-<li>INCRBY<br>INCRBY key increment<br>将key存储的值增加increment  </li>
-<li>INCRBYFLOAT<br>INCRBYFLOAT key increment<br>加上浮点增量<br>可以使用科学计数法  </li>
-<li>DECR<br>DECR key<br>减法  </li>
-<li>DECRBY   </li>
-</ul>
-</li>
-</ul>
-<p>  案例：<br>   每天访问的人数<br>  每天注册的人数<br>  限制API在某一时段的访问次数<br>  单号生成<br>  错误拦截    </p>
-<h1 id="字符串的二进制操作"><a href="#字符串的二进制操作" class="headerlink" title="字符串的二进制操作"></a>字符串的二进制操作</h1><ul>
-<li>SETBIT<br>SETBIT key offset value<br>对key所存储的字符串值，设置或清除指定偏移量上的位，位的设置或者清除取决于value参数，可以是0也可以是1。<br>字符串会进行伸展以确保它可以将value保存在指定的偏移量上。当字符串值进行伸展时，空白位置以0填充。offset参数必须大于或等于0，小于2的32次方。<br>返回值：当key不存在时，自动生成一个新的字符串<br>指定偏移量原来存储的位   </li>
-<li>GETBIT<br>GETBIT key offset  </li>
-<li>BITCOUNT<br>BITCOUNT key 【start】 【end】<br>计算给定字符串中，被设置为1的比特位的数量。<br>1为8位   </li>
-<li>BITOP<br>BITOP operation destkey key 【key 。。】<br>对一个或者多个保存二进制的字符串key进行位元操作，并将结果保存在destkey上<br>operation  and or not xor 中的一种<br>注意：较短字段缺少的部分会被视为0  </li>
-<li><p>BITPOS<br>BITPOS key bit 【start】 【end】<br>返回字符串中第一个被设置为1或者0的bit<br>没找到为=1   </p>
-<p>项目案例：<br>用户签到<br>统计活跃用户<br>用户在线状态  </p>
-</li>
-</ul>
-<h1 id="哈希表数据类型"><a href="#哈希表数据类型" class="headerlink" title="  哈希表数据类型"></a>  哈希表数据类型</h1><ul>
-<li>HSET<br>HSET key filed value<br>将哈希表key中的域field的值设置为value。<br>如果key不存在，将会新建哈希表并进行HSET操作  </li>
-<li>HSETNX<br>HSETNX key field value<br>将哈希表key中的域field的值设置为value，当且仅当filed不存在。  </li>
-<li>HMSET<br>HMSET key field value [field value….]</li>
-<li>HINCRBY<br>HINCRBY key field value  </li>
-<li>HINCRBYFLOAT  </li>
-<li>HGET<br>HGET key field  </li>
-<li>HGETALL<br>HGETALL key<br>返回哈希表key中所有的域和值<br>返回值里面，紧跟在每个域名后的是域的值，所以返回值的长度是哈希表的两倍  </li>
-<li>HMGET<br>HMGET key filed 【field。。。】  </li>
-<li>HKEYS<br>HKEYS key<br>获取哈希表中的field</li>
-<li>HVALS<br>HVALS key  </li>
-<li>HEXISTS<br>HEXIST kye field<br>返回哈希表key中的域field的数量  </li>
-<li>HLEN<br>HLEN key  </li>
-<li>HSTRLEN<br>HSTRLEN key field<br>返回哈希表key中，给定域field相关联的值的字符串长度   </li>
-<li>HDEL<br>HDEL key field  【field 。。】<br>删除哈希表key中的一个或多个指定域   </li>
-</ul>
-<p>  案例：<br>  会员信息<br>  用户购物车  </p>
-<h1 id="List数据类型"><a href="#List数据类型" class="headerlink" title="List数据类型"></a>List数据类型</h1><p>  应用场景   ：<br>  粉丝列表<br>  时间轴（Timeline）<br>  最新文章<br>  消息队列   </p>
-<ul>
-<li>LPUSH<br>LPUSH key value【value】<br>将一个或者多个value 插入key的表头<br>多个值的情况下，由左到右<br>原子性<br>假如key不存在，则创建空列表并且LPUSH</li>
-<li>LPUSHX<br>LPUSHX key value<br>列表要已经存在，不存在不插入  </li>
-<li>LINSERT<br>LINSERT key BEFORE|AFTER pivot value<br>将值value插入到列表key当中，位于值pivot的前后<br>keyA或pivot不存在，不插入  </li>
-<li>LSET<br>LSET key index value<br>列表不存在或者key不存在，不执行  </li>
-<li>RPUSH  </li>
-<li>RPUSHX  </li>
-</ul>
-<p>   查询   </p>
-<ul>
-<li>LINDEX<br>LINDEX key index<br>返回列表key中，下标为index的元素，0为第一个元素，-1为最后一个元素   </li>
-<li>LLEN<br>LLEN key<br>返回列表key的长度   <ul>
-<li>LRANGE<br>LRANGE  key start end<br>返回列表key中指定区间的元素 ，-1为列表最后   </li>
-</ul>
-</li>
-</ul>
-<p>  删除：  </p>
-<ul>
-<li>LPOP<br>LPOP key<br>移除并返回列表key的头元素  </li>
-<li>LREM<br>LREM key count value<br>根据参数count的值，移除列表中参数value相等的元素<br>count&gt;0，从表头到表尾搜索，移除于value相等的值。count&lt;0,从表尾向表头搜索，移除与count相等的元素。count=0，移除标中所有和count相等的元素  </li>
-<li>LTRIM<br>LTRIM key start end<br>对一个列表进行修剪，就是说，让列表之保留指定区间内的元素，不在指定区间之内的元素都将被删除   </li>
-<li>RPOP  </li>
-<li><p>RPOPLPUSH<br>RPOPLPUSH  source destination<br>在一个原子时间内，执行两个动作：将列表source中的尾元素弹出，并返回给客户端。将source弹出的元素插入到destination，作为destination列表的头元素<br>返回值：被弹出的元素<br>|<br>|<br>|</p>
-<p>|  </p>
-</li>
-<li>BLPOP<br>BLPOP key [key …] timeout<br>BLPOP是列表的阻塞式弹出原语，LPOP命令的阻塞版本，当前给定列表内没有任何元素可供弹出的时候，连接将被BLPOP命令阻塞，直到等待超时或发现可弹出元素为止<br>返回弹出值  </li>
-<li>BRPOP  </li>
-<li><p>BRPOPLPUSH  </p>
-<p>案例：<br>粉丝列表<br>最新文章<br>消息队列  </p>
-</li>
-</ul>
-<h1 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h1><p>set是string类型的无序集合<br>集合成员唯一，不能出现重复的数据<br>场景：<br>共同好友<br>好友推荐  </p>
-<ul>
-<li>SADD<br>SADD keymember [member…]<br>将一个或者多个member假如到集合key中，已经存在于集合中的member元素将会忽略<br>如果集合不存在，将会创建<br>返回新假如的元素的数量，忽视被忽略的元素  </li>
-<li>SCARD<br>SCARD key<br>返回集合key的基数 （集合中元素的数量）</li>
-<li>SMEMBERS<br>SMEMBERS key<br>返回集合中的元素  </li>
-<li>SISMEMBER<br>SISMEMBER key member<br>检查一个元素是否在集合中<br>返回值1和0  </li>
-<li>SRANDMEMBER<br>SRANDMEMBERE key 【count】<br>count默认为1，返回集合中随即的一个元素   </li>
-<li>SSCAN<br>SSCAN key cursor 【match pattern】 【COUNT count】<br>用于迭代集合键中的元素<br>返回集合中的元素  </li>
-</ul>
-<ul>
-<li>SDIFF<br>SDIFF key [key…]<br>返回一个集合的全部成员，该集合是所有给定集合之间的差集   </li>
-<li>SDIFFSTORE<br>SDIFFSTORE destination key [key…]<br>类似SDIFF，它将结果保存到destination集合，而不是简单的返回结果集<br>如果destination已经存在，则将其覆盖   </li>
-<li>SINTER<br>SINTER key 【key】<br>返回一个集合的全部成员，该集合是所有给定集合的交集<br>不存在的key视为空集合  </li>
-<li>SINTERSTORE  </li>
-<li>SUNION<br>SUNION key 【key。。】<br>并集  </li>
-<li>SUNIONSTORE  </li>
-<li>SPOP<br>SPOP key<br>移除并返回集合中的一个随机元素  </li>
-<li>SREM<br>SREM key member【member】<br>移除集合key中的一个member元素  </li>
-<li>SMOVE<br>SMOVE source destination member<br>将member元素从source 移动到destination集合<br>原子性  </li>
-</ul>
-<p>案例：<br>共同好友<br>好友推荐  </p>
-<h1 id="有序集合类型"><a href="#有序集合类型" class="headerlink" title="有序集合类型"></a>有序集合类型</h1><p>sortset<br>string类型的集合，不允许有重复成员<br>不同的是每个元素都会关联一个double类型的分数<br>redis正是通过分数来为集合中的成员进行从小到大的排序<br>有序集合的成员是唯一的，但分数却可以重复  </p>
-<p>案例：<br>排行榜  </p>
-<ul>
-<li>ZADD<br>ZADD key key score member【score member。。。】<br>将一个或多个member和score加入有序集合key中<br>如果已有，以member为基准更新score重新插入？  </li>
-<li>ZINCRBY<br>ZINCRBY key increment member<br>为有序集合key的成员member的score的值加上increment<br>当key不存在时，或member不存在时，相当于ZADD  </li>
-</ul>
-<ul>
-<li>ZCARD<br>ZCARD key<br>返回有序集合key的基数（有序集合的元素数量）  </li>
-<li>ZCOUNT<br>ZOUNT key min max<br>返回有序集合key中，score在min和max之间的基数。  </li>
-<li>ZRANGE<br>ZRANGE key start end 【WITHSCORE】<br>返回有序集合中，指定区间的集合   </li>
-<li>ZRANGEBYSCORE<br>ZRANGE key start end 【WITHSCORE】 【LIMIT offset count】   </li>
-<li>ZRANK<br>ZRANK key member<br>返回有序集合key中成员member的排名，按照score的从小到大<br>排名最小为0  </li>
-<li>ZREVRABGE  </li>
-<li>ZREVRABGEBYSCORE   </li>
-<li>ZREVRANK  </li>
-<li>ZCORE<br>ZSCORE key member<br>返回有序key中，成员啊member的score值<br>返回member成员的score值，以字符串形式表示  </li>
-<li>ZCAN key cursor 。。。。<br>。。。。。  </li>
-<li>ZRANGEBYLEX<br>。。。。。<br>score相同，字典序排序  </li>
-<li>ZLEXCOUNT<br>ZLEXCOUNT key min max<br>……<br>|     </li>
-<li>ZUNIONSTORE<br>ZUNIONSTORE DESTINATION MUMKEYS key [key..]….. 【WEIGHT】  SUM|MIN|MAX<br>计算给定一个或者多个有序集合的并集，其中给定key的数量必须以mumber参数给定。。。。<br>默认情况下，结果集中某个成员的score的值是所有给定集下该成员score之和   </li>
-<li>ZINTERSTORE  </li>
-<li>ZREM key member 【member】  </li>
-<li>ZREMRANGEBYRANK<br>ZRENRANGEBYRANK key start end   </li>
-<li>ZREMRANGEBYSCORE  </li>
-<li>ZRENRABGEBYLEX<br>*</li>
-</ul>
-
+<li>UNLINK<br>UNLINK KEY [KEY..]<br>非阻塞删除指定key
+        
+          <a class="article-more-a" href="/2018/10/15/redis相关/#more">more >></a>
+        
       
 
       
@@ -915,7 +640,7 @@ R(&apos;模块/控制器/方法&apos;);
 <ul>
 <li>admin入口文件    </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">    header(&quot;content-type:text/html;charset=utf-8&quot;);//设置框架编码</span><br><span class="line">    define(&apos;APP_PATH&apos;,__DIR__.&apos;/&apos;);//设置时间区域</span><br><span class="line">    define(&quot;Lib&quot;,&quot;./myphp/&quot;);//定义项目路径常量</span><br><span class="line">    define(&quot;Resource&quot;,APP_PATH.&apos;Resource&apos;);//定义框架目录常量</span><br><span class="line">    ini_set(&quot;display_errors&quot;,1);//定义项目资源目录常量</span><br><span class="line">    ini_set(&quot;data.timezone&quot;,&quot;Asia/Shanghai&quot;);//是否抛出错误</span><br><span class="line"></span><br><span class="line">```     </span><br><span class="line"></span><br><span class="line">#### display_errors介绍    </span><br><span class="line"></span><br><span class="line">display_errors介绍：错误回显，一般常用语开发模式，但是很多应用在正式环境中也忘记了关闭此选项。错误回显可以暴露出非常多的敏感信息，为攻击者下一步攻击提供便利。推荐关闭此选项。 display_errors = On 开启状态下，若出现错误，则报错，出现错误提示 dispaly_errors = Off 关闭状态下，若出现错误，则提示：服务器错误。但是不会出现错误提示   </span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#### 自动加载类的介绍    </span><br><span class="line"></span><br><span class="line">在编写面向对象（OOP） 程序时，很多开发者为每个类新建一个 PHP 文件。 这会带来一个烦恼：每个脚本的开头，都需要包含（include）一个长长的列表（每个类都有个文件）。在 PHP 5 中，已经不再需要这了。 spl_autoload_register() 函数可以注册任意数量的自动加载器，当使用尚未被定义的类（class）和接口（interface）时自动去加载。通过注册自动加载器，脚本引擎在 PHP 出错失败前有了最后一个机会加载所需的类。  </span><br><span class="line">#### spl_autoload_register   </span><br><span class="line"></span><br><span class="line">这个是框架的关键，它能够自动加载未定义的类，接下来通过将类分布在各文档，用路径寻找到，依次前后拼接，形成一个完整的文件,admin获得index。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#### 临时   </span><br><span class="line"></span><br><span class="line">set_error_handler(&quot;customError&quot;) 不仅可以接受函数，还可以接受 类的方法（公开的静态方法 及 公开的非静态方法 都可以），但需要以 数组形式 传递，数组的第一值为“类名”，第二个参数为“方法名”      </span><br><span class="line"></span><br><span class="line">简单示例</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">    header(&quot;content-type:text/html;charset=utf-8&quot;);//设置框架编码</span><br><span class="line">    define(&apos;APP_PATH&apos;,__DIR__.&apos;/&apos;);//设置时间区域</span><br><span class="line">    define(&quot;Lib&quot;,&quot;./myphp/&quot;);//定义项目路径常量</span><br><span class="line">    define(&quot;Resource&quot;,APP_PATH.&apos;Resource&apos;);//定义框架目录常量</span><br><span class="line">    ini_set(&quot;display_errors&quot;,1);//定义项目资源目录常量</span><br><span class="line">    ini_set(&quot;data.timezone&quot;,&quot;Asia/Shanghai&quot;);//是否抛出错误</span><br><span class="line"></span><br><span class="line">```     </span><br><span class="line"></span><br><span class="line">#### display_errors介绍    </span><br><span class="line"></span><br><span class="line">display_errors介绍：错误回显，一般常用语开发模式，但是很多应用在正式环境中也忘记了关闭此选项。错误回显可以暴露出非常多的敏感信息，为攻击者下一步攻击提供便利。推荐关闭此选项。 display_errors = On 开启状态下，若出现错误，则报错，出现错误提示 dispaly_errors = Off 关闭状态下，若出现错误，则提示：服务器错误。但是不会出现错误提示   </span><br><span class="line"></span><br><span class="line">&lt;!--more --&gt;</span><br><span class="line">#### 自动加载类的介绍    </span><br><span class="line"></span><br><span class="line">在编写面向对象（OOP） 程序时，很多开发者为每个类新建一个 PHP 文件。 这会带来一个烦恼：每个脚本的开头，都需要包含（include）一个长长的列表（每个类都有个文件）。在 PHP 5 中，已经不再需要这了。 spl_autoload_register() 函数可以注册任意数量的自动加载器，当使用尚未被定义的类（class）和接口（interface）时自动去加载。通过注册自动加载器，脚本引擎在 PHP 出错失败前有了最后一个机会加载所需的类。  </span><br><span class="line">#### spl_autoload_register   </span><br><span class="line"></span><br><span class="line">这个是框架的关键，它能够自动加载未定义的类，接下来通过将类分布在各文档，用路径寻找到，依次前后拼接，形成一个完整的文件,admin获得index。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#### 临时   </span><br><span class="line"></span><br><span class="line">set_error_handler(&quot;customError&quot;) 不仅可以接受函数，还可以接受 类的方法（公开的静态方法 及 公开的非静态方法 都可以），但需要以 数组形式 传递，数组的第一值为“类名”，第二个参数为“方法名”      </span><br><span class="line"></span><br><span class="line">简单示例</span><br></pre></td></tr></table></figure>
 <p>框架入口<br>&lt;?php<br>//框架的运行方法<br>class Myphp<br>{<br>    public function run()<br>    {<br>        spl_autoload_register(array($this,’load’));<br>        // set_error_handler(array($this,’AppError’));<br>        // set_exception_handler(array($this,’AppException’));<br>        //上面两个注释是错误log，暂不开启</p>
 <pre><code>    $temp = explode(&quot;/&quot;, $_SERVER[&apos;REDIRECT_URL&apos;]);
     var_dump($temp);
@@ -1151,12 +876,9 @@ $myphp -&gt; run();
 <p>var hsebcrtot = new JSEncrypt();    </p>
 <p>jsencrypt.setPublicKey(publicKey);     </p>
 <p>return jsencrypt.encrypt(str);      </p>
-<ul>
-<li><p>php示例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">function RSA_opensll($date,$type=&quot;encode&quot;)&#123;</span><br><span class="line">  if(!empty($data))&#123;</span><br><span class="line">     die(&quot;加解密输入为空&quot;);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if($type == &quot;encode&quot;)&#123;</span><br><span class="line">     $key = openssl_pkey_get_public(RSA_public);//RSA_public为外部定义的    </span><br><span class="line">     if(!$key)&#123;</span><br><span class="line">        die(&quot;不合规的公钥&quot;);</span><br><span class="line">     &#125;</span><br><span class="line">     openssl_public_encrypt($data,$crypted,$key);</span><br><span class="line">     $crypted = base64_encode($crypted);  //没有此步，则为乱码</span><br><span class="line">     return $crypted;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if($type == &quot;decode&quot;)&#123;</span><br><span class="line">     $key = openssl_pkey_get_private(RSA_private);//RSA_private为外部定义的    </span><br><span class="line">     if(!$key)&#123;</span><br><span class="line">        die(&quot;不合规的私钥&quot;);</span><br><span class="line">     &#125;</span><br><span class="line">     $data = base64_decode($data);</span><br><span class="line">     openssl_private_encrypt($data,$crypted,$key);</span><br><span class="line">     return $crypted;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-
+        
+          <a class="article-more-a" href="/2018/10/13/加密登录/#more">more >></a>
+        
       
 
       
@@ -1169,6 +891,85 @@ $myphp -&gt; run();
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/10/13/加密登录/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Mongodb相关" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/13/Mongodb相关/">Mongodb相关</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/13/Mongodb相关/" class="archive-article-date">
+  	<time datetime="2018-10-13T09:34:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Mongodb"><a href="#Mongodb" class="headerlink" title="Mongodb"></a>Mongodb</h1><ul>
+<li><p>开启启动<br><code>echo &#39;/usr/local/mongodb/bin/mongod --dbpath=/usr/local/mongodb/data&#39; &gt;&gt;/etc/rc.local</code>   </p>
+</li>
+<li><p>启动mongodb<br><code>/usr/local/mongodb/bin/mongodb --dbpath=/usr/local/mogodb/data  --fork  --logpath=/usr/local/mongodb/dblogs</code>    </p>
+        
+          <a class="article-more-a" href="/2018/10/13/Mongodb相关/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Mongodb</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/13/Mongodb相关/">展开全文 >></a>
         </p>
       
 
@@ -1299,10 +1100,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">memcache</a>
               </li>
              
@@ -1311,11 +1108,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
               </li>
              
               <li class="article-tag-list-item">

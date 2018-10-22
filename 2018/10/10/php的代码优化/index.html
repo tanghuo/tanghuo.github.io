@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>php的代码优化 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="php的代码小优化 if()语句的优化       1234567891011121314151617    //原始写法    if(1 ==$orderState)&amp;#123;        $status = &amp;quot;success&amp;quot;;    &amp;#125;    else&amp;#123;       $status = &amp;quot;failed&amp;quot;;    &amp;#125;">
+  <meta name="description" content="php的代码小优化 if()语句的优化       123456789101112131415161718    //原始写法    if(1 ==$orderState)&amp;#123;        $status = &amp;quot;success&amp;quot;;    &amp;#125;    else&amp;#123;       $status = &amp;quot;failed&amp;quot;;    &amp;#125;">
 <meta name="keywords" content="php">
 <meta property="og:type" content="article">
 <meta property="og:title" content="php的代码优化">
 <meta property="og:url" content="http://yoursite.com/2018/10/10/php的代码优化/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="php的代码小优化 if()语句的优化       1234567891011121314151617    //原始写法    if(1 ==$orderState)&amp;#123;        $status = &amp;quot;success&amp;quot;;    &amp;#125;    else&amp;#123;       $status = &amp;quot;failed&amp;quot;;    &amp;#125;">
+<meta property="og:description" content="php的代码小优化 if()语句的优化       123456789101112131415161718    //原始写法    if(1 ==$orderState)&amp;#123;        $status = &amp;quot;success&amp;quot;;    &amp;#125;    else&amp;#123;       $status = &amp;quot;failed&amp;quot;;    &amp;#125;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-11T06:18:14.991Z">
+<meta property="og:updated_time" content="2018-10-22T13:56:00.045Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="php的代码优化">
-<meta name="twitter:description" content="php的代码小优化 if()语句的优化       1234567891011121314151617    //原始写法    if(1 ==$orderState)&amp;#123;        $status = &amp;quot;success&amp;quot;;    &amp;#125;    else&amp;#123;       $status = &amp;quot;failed&amp;quot;;    &amp;#125;">
+<meta name="twitter:description" content="php的代码小优化 if()语句的优化       123456789101112131415161718    //原始写法    if(1 ==$orderState)&amp;#123;        $status = &amp;quot;success&amp;quot;;    &amp;#125;    else&amp;#123;       $status = &amp;quot;failed&amp;quot;;    &amp;#125;">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -48,7 +48,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">汤</a></h1>
@@ -106,7 +106,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="https://s1.ax1x.com/2018/10/22/iD5NCt.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">汤</h1>
@@ -178,7 +178,7 @@
         <h3 id="php的代码小优化"><a href="#php的代码小优化" class="headerlink" title="php的代码小优化"></a>php的代码小优化</h3><ul>
 <li>if()语句的优化     </li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">    //原始写法</span><br><span class="line">    if(1 ==$orderState)&#123;</span><br><span class="line">        $status = &quot;success&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    else&#123;</span><br><span class="line">       $status = &quot;failed&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    return $status;</span><br><span class="line"></span><br><span class="line">    //简化写法</span><br><span class="line">    $status = &quot;failed&quot;;</span><br><span class="line">    if( 1 == $orderState)&#123;</span><br><span class="line">       $status = &apos;success&apos;;</span><br><span class="line">    &#125;</span><br><span class="line">    return $status;</span><br><span class="line">```    </span><br><span class="line">*  使用三元运算符来代替if()</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">    //原始写法</span><br><span class="line">    if(1 ==$orderState)&#123;</span><br><span class="line">        $status = &quot;success&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    else&#123;</span><br><span class="line">       $status = &quot;failed&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">    return $status;</span><br><span class="line"></span><br><span class="line">    //简化写法</span><br><span class="line">    $status = &quot;failed&quot;;</span><br><span class="line">    if( 1 == $orderState)&#123;</span><br><span class="line">       $status = &apos;success&apos;;</span><br><span class="line">    &#125;</span><br><span class="line">    return $status;</span><br><span class="line">```    </span><br><span class="line">&lt;!--more --&gt;</span><br><span class="line">*  使用三元运算符来代替if()</span><br></pre></td></tr></table></figure>
 <pre><code>//原始写法
 if(!empty($_POST[&apos;action&apos;])){
     $action = $_POST[&apos;action&apos;];
@@ -448,10 +448,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">memcache</a>
               </li>
              
@@ -460,11 +456,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">php</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">php</a>
               </li>
              
               <li class="article-tag-list-item">
