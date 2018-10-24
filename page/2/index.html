@@ -155,6 +155,169 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-加密登录" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/13/加密登录/">加密登录</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/13/加密登录/" class="archive-article-date">
+  	<time datetime="2018-10-13T14:12:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="加密登录"><a href="#加密登录" class="headerlink" title="加密登录"></a>加密登录</h1><ul>
+<li>介绍    </li>
+</ul>
+<p>Ras算法，非对称加密。公钥秘钥：公钥加密，私钥解密，私钥加密，公钥解密。   </p>
+<p>需要安装openssl模块    </p>
+<ul>
+<li>php相关函数   </li>
+</ul>
+<p>openssl_pkey_get_public //检查公钥是否可用    </p>
+<p>openssl_public_encrypt  //公钥加密     </p>
+<p>openssl_pkey_get_private //检查私钥是否可用    </p>
+<p>openssl_private_encrypt  //私钥加密    </p>
+<ul>
+<li>js相关函数     </li>
+</ul>
+<p>需要安装相关类库</p>
+<p>publicKey =””; //公钥  </p>
+<p>var hsebcrtot = new JSEncrypt();    </p>
+<p>jsencrypt.setPublicKey(publicKey);     </p>
+<p>return jsencrypt.encrypt(str);      </p>
+        
+          <a class="article-more-a" href="/2018/10/13/加密登录/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/13/加密登录/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Mongodb相关" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/13/Mongodb相关/">Mongodb相关</a>
+    </h1>
+  
+
+        
+        <a href="/2018/10/13/Mongodb相关/" class="archive-article-date">
+  	<time datetime="2018-10-13T09:34:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Mongodb"><a href="#Mongodb" class="headerlink" title="Mongodb"></a>Mongodb</h1><ul>
+<li><p>开启启动<br><code>echo &#39;/usr/local/mongodb/bin/mongod --dbpath=/usr/local/mongodb/data&#39; &gt;&gt;/etc/rc.local</code>   </p>
+</li>
+<li><p>启动mongodb<br><code>/usr/local/mongodb/bin/mongodb --dbpath=/usr/local/mogodb/data  --fork  --logpath=/usr/local/mongodb/dblogs</code>    </p>
+        
+          <a class="article-more-a" href="/2018/10/13/Mongodb相关/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Mongodb</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/10/13/Mongodb相关/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-memcache相关" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -892,215 +1055,6 @@ $filter_XSS = new \FilterXSS(); //正确
 
 
   
-    <article id="post-php的底层运行原理-2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/11/php的底层运行原理-2/">php的底层运行原理(2)</a>
-    </h1>
-  
-
-        
-        <a href="/2018/10/11/php的底层运行原理-2/" class="archive-article-date">
-  	<time datetime="2018-10-11T09:21:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="php的底层运行原理-2"><a href="#php的底层运行原理-2" class="headerlink" title="php的底层运行原理(2)"></a>php的底层运行原理(2)</h3><ul>
-<li><p>php运行机制和原理    </p>
-<ol>
-<li><p>扫描(scanning):先进行语法分析和词法分析，然后将index.php内容变成一个个的语法片段（token）.    </p>
-</li>
-<li><p>解析(parsing)：词法分析后，就需要根据一个个token去组成有意义的表达式。</p>
-<blockquote>
-<p>parsing首先丢弃token array中多余的空格，然后将剩余的token转化成一个个的简单表达式。</p>
-</blockquote>
-</li>
-<li><p>编译(complication)：将表达式编译成中间码（opcode）。   </p>
-</li>
-<li><p>执行（execution）：将中间码一条条的执行。   </p>
-</li>
-<li><p>输出（output buffer）：将要输出的内容输出到缓冲区。    </p>
-</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;&gt;php</span><br><span class="line"></span><br><span class="line">$code = &lt;&lt;&lt;&apos;PHP_CODE&apos;</span><br><span class="line">&lt;?php</span><br><span class="line">echo &apos;hello world&apos;;</span><br><span class="line">$data = 1+1;</span><br><span class="line">echo $data;</span><br><span class="line">PHP_CODE;</span><br><span class="line"></span><br><span class="line">print_r(token_get_all($code));</span><br></pre></td></tr></table></figure>
-<p>分析这个返回结果我们可以发现，源码中的字符串，字符，空格都会原样返回。每个源代码中的字符，都会出现在相应的顺序处。   </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">array(</span><br><span class="line">  [0] = 316   //tokenid</span><br><span class="line">  [1] = &quot;hello world&quot;   //token 的内容</span><br><span class="line">  [2] = 3   //token所在的行数</span><br><span class="line">  )</span><br></pre></td></tr></table></figure>
-<p>Token ID (在zend内部该Token的对应码)<br>具体的定义可以在zend_language_parser.h中找到</p>
-</li>
-</ul>
-<ul>
-<li><p>提高php代码运行效率    </p>
-<ul>
-<li><p>压缩代码，去处无用的注释和空白     </p>
-</li>
-<li><p>尽量使用PHP内置函数或者拓展函数     </p>
-</li>
-<li><p>用apc/xcache/opcache等缓存php的opcode     </p>
-</li>
-<li><p>缓存复杂和耗时运算的结果     </p>
-</li>
-<li><p>能异步处理的任务不要马上处理，如发邮件     </p>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="php底层的变量存储"><a href="#php底层的变量存储" class="headerlink" title="php底层的变量存储"></a>php底层的变量存储</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">  typeof union _zvalue_value &#123;</span><br><span class="line"></span><br><span class="line">    long zval;</span><br><span class="line">    double zval;</span><br><span class="line">    struct&#123;</span><br><span class="line">      char *val;</span><br><span class="line">      int len;</span><br><span class="line">    &#125;</span><br><span class="line">    HashTable *ht;</span><br><span class="line">    zend_object_value obj;</span><br><span class="line"></span><br><span class="line">  &#125; zvalue_value;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  struct _zval_struct&#123;</span><br><span class="line"></span><br><span class="line">      zvalue_value value;  //value</span><br><span class="line">      zend_uint refcount__gc;</span><br><span class="line">      zend_uchar type;    //active type</span><br><span class="line">      zend_uchar  is_ref__gc;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">```  </span><br><span class="line">*  cow特性   </span><br><span class="line">   COW（copy on write）是内存优化的常见手段，即写时复制，只有在写入时才会真正复制一份内存进行修改。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### php的垃圾回收机制    </span><br><span class="line"></span><br><span class="line">  * 什么是垃圾    </span><br><span class="line"></span><br><span class="line">      垃圾主要针对内存，如果一个对象struct，并没有任何变量引用它，那这个对象就是垃圾.</span><br><span class="line"></span><br><span class="line">  * 虽php结束进程时会销毁所有变量，关闭所有打开的句柄资源，但为何清理垃圾    </span><br><span class="line"></span><br><span class="line">      * 开启太多内存空间，导致内存溢出    </span><br><span class="line">      * 长时间运行的php代码，例如守护进程   </span><br><span class="line"></span><br><span class="line">  * 如何回收垃圾   </span><br><span class="line"></span><br><span class="line">      1. 如何找到垃圾  </span><br><span class="line"></span><br><span class="line">            在所有变量中找到垃圾，所有的变量get_defined_vars函数能够看到所有已经定义的变量，那意味着php本身能存储所有变量或已开辟的内存空间，具体在zend_globals.h中struct_zend_executor_globals中看到</span><br></pre></td></tr></table></figure>
-<pre><code>      struct _zend_executor_globals{
-        ...
-        HashTable *active_symbol_table;//局部变量的符号表
-        HashTable symbol_table;//全局变量的符号表
-
-        ...
-      }
-
-      ```
-      根据zend_uint refcount__gc和zend_uchar is_ref__gc来判断是否是垃圾
-
-2. 如何清理    
-
-  在5.2版本之前，根据refcount_gc是否为0；   
-  但在5.3之后，采用了新的算法，引用计数系统中的同步周期回收算法（Concurrent Cycle Collection in Reference Counted System）来清除。    
-
-  * 5.3中采用模拟删除每个疑似变量，将其变量引用减一，然后在有其他变量指向该值时进行模拟恢复。在对不恢复的变量进行删除。
-</code></pre>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">php</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/10/11/php的底层运行原理-2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-php的底层运行原理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/11/php的底层运行原理/">php的底层运行原理</a>
-    </h1>
-  
-
-        
-        <a href="/2018/10/11/php的底层运行原理/" class="archive-article-date">
-  	<time datetime="2018-10-11T04:01:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-11</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="php的底层运行原理"><a href="#php的底层运行原理" class="headerlink" title="php的底层运行原理"></a>php的底层运行原理</h3><ul>
-<li><p>php的运行模式<br>SAPI : Server Application Programming  Interface 服务器端应用编程接口。它就是php和其他应用交互的接口，php脚本要执行有很多种方式，通过web服务器，或者直接在命令行下，也可以直接嵌入在其他程序中。      </p>
-<ul>
-<li><p>APIS 提供了一个和外部通信的接口，常见有五大运行模式：    </p>
-        
-          <a class="article-more-a" href="/2018/10/11/php的底层运行原理/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">php</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/10/11/php的底层运行原理/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
@@ -1198,15 +1152,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">memcache</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color3">TP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">mian</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">memcache</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1214,7 +1172,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">TP</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1226,15 +1184,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">网络 基础</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">零碎</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">cookie session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">网络 基础</a>
               </li>
             
             <div class="clearfix"></div>

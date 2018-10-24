@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="php的底层运行原理(2) php运行机制和原理      扫描(scanning):先进行语法分析和词法分析，然后将index.php内容变成一个个的语法片段（token）.      解析(parsing)：词法分析后，就需要根据一个个token去组成有意义的表达式。  parsing首先丢弃token array中多余的空格，然后将剩余的token转化成一个个的简单表达式。   编译(com">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-11T17:44:30.684Z">
+<meta property="og:updated_time" content="2018-10-24T02:50:15.504Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="php的底层运行原理(2)">
 <meta name="twitter:description" content="php的底层运行原理(2) php运行机制和原理      扫描(scanning):先进行语法分析和词法分析，然后将index.php内容变成一个个的语法片段（token）.      解析(parsing)：词法分析后，就需要根据一个个token去组成有意义的表达式。  parsing首先丢弃token array中多余的空格，然后将剩余的token转化成一个个的简单表达式。   编译(com">
@@ -190,9 +190,10 @@
 <li><p>执行（execution）：将中间码一条条的执行。   </p>
 </li>
 <li><p>输出（output buffer）：将要输出的内容输出到缓冲区。    </p>
+<a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;&gt;php</span><br><span class="line"></span><br><span class="line">$code = &lt;&lt;&lt;&apos;PHP_CODE&apos;</span><br><span class="line">&lt;?php</span><br><span class="line">echo &apos;hello world&apos;;</span><br><span class="line">$data = 1+1;</span><br><span class="line">echo $data;</span><br><span class="line">PHP_CODE;</span><br><span class="line"></span><br><span class="line">print_r(token_get_all($code));</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;&gt;php</span><br><span class="line"></span><br><span class="line">$code = &lt;&lt;&lt;&apos;PHP_CODE&apos;</span><br><span class="line">&lt;?php</span><br><span class="line">echo &apos;hello world&apos;;</span><br><span class="line">$data = 1+1;</span><br><span class="line">echo $data;</span><br><span class="line">PHP_CODE;</span><br><span class="line"></span><br><span class="line">print_r(token_get_all($code));</span><br></pre></td></tr></table></figure>
 <p>分析这个返回结果我们可以发现，源码中的字符串，字符，空格都会原样返回。每个源代码中的字符，都会出现在相应的顺序处。   </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">array(</span><br><span class="line">  [0] = 316   //tokenid</span><br><span class="line">  [1] = &quot;hello world&quot;   //token 的内容</span><br><span class="line">  [2] = 3   //token所在的行数</span><br><span class="line">  )</span><br></pre></td></tr></table></figure>
 <p>Token ID (在zend内部该Token的对应码)<br>具体的定义可以在zend_language_parser.h中找到</p>
@@ -473,15 +474,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">memcache</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Mongodb</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color3">TP</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">mian</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">memcache</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -489,7 +494,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">TP</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -501,15 +506,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">网络 基础</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">零碎</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">cookie session</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">网络 基础</a>
               </li>
             
             <div class="clearfix"></div>
